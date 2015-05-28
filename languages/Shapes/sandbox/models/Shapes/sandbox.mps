@@ -55,5 +55,16 @@
       </node>
     </node>
   </node>
+  <node concept="1TwYB8" id="14dE8Mh_lwC">
+    <property role="TrG5h" value="MySecondDrawing" />
+    <node concept="1TwZJw" id="14dE8Mh_lwH" role="1TwY$A">
+      <property role="1TwZ6S" value="200" />
+      <property role="1TwZ6U" value="200" />
+      <property role="1TwZ6R" value="100" />
+      <node concept="1TwJ8_" id="14dE8Mh_lwP" role="1Tzt49">
+        <ref role="1TwJ8r" to="1t7x:~Color.BLUE" resolve="BLUE" />
+      </node>
+    </node>
+  </node>
 </model>
 
