@@ -2,11 +2,11 @@
 <model ref="r:b3efc21b-8e09-46b0-a9c4-98423f8f9bc2(Shapes.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="7f1904dd-57c2-400e-96a8-b4fdd0aa4937" name="Shapes" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="7f1904dd-57c2-400e-96a8-b4fdd0aa4937" name="Shapes" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
   </languages>
   <imports>
-    <import index="1t7x" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" implicit="true" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -43,7 +43,7 @@
       <property role="1TwZ6U" value="20" />
       <property role="1TwZ6R" value="30" />
       <node concept="1TwJ8_" id="nnAfPWmP0s" role="1Tzt49">
-        <ref role="1TwJ8r" to="1t7x:~Color.GREEN" resolve="GREEN" />
+        <ref role="1TwJ8r" to="z60i:~Color.GREEN" resolve="GREEN" />
       </node>
     </node>
     <node concept="1TwZ6_" id="nnAfPWlmF5" role="1TwY$A">
@@ -51,7 +51,7 @@
       <property role="1TwZ6g" value="200" />
       <property role="1TwZ6d" value="50" />
       <node concept="1TwJ8_" id="nnAfPWmP0w" role="1Tzt49">
-        <ref role="1TwJ8r" to="1t7x:~Color.CYAN" resolve="CYAN" />
+        <ref role="1TwJ8r" to="z60i:~Color.CYAN" resolve="CYAN" />
       </node>
     </node>
   </node>
@@ -62,7 +62,7 @@
       <property role="1TwZ6U" value="200" />
       <property role="1TwZ6R" value="100" />
       <node concept="1TwJ8_" id="14dE8Mh_lwP" role="1Tzt49">
-        <ref role="1TwJ8r" to="1t7x:~Color.BLUE" resolve="BLUE" />
+        <ref role="1TwJ8r" to="z60i:~Color.BLUE" resolve="BLUE" />
       </node>
     </node>
   </node>
