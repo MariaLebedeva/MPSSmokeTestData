@@ -182,11 +182,12 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -297,7 +298,7 @@
                         <node concept="3clFbF" id="nnAfPWnrGf" role="3cqZAp">
                           <node concept="2OqwBi" id="nnAfPWnrGa" role="3clFbG">
                             <node concept="3Tsc0h" id="nnAfPWnrGd" role="2OqNvi">
-                              <ref role="3TtcxE" to="gvox:nnAfPWl77r" />
+                              <ref role="3TtcxE" to="gvox:nnAfPWl77r" resolve="shapes" />
                             </node>
                             <node concept="30H73N" id="nnAfPWnrGe" role="2Oq$k0" />
                           </node>
@@ -504,8 +505,8 @@
                             <node concept="1iwH70" id="nnAfPWnL0j" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnLAT" role="1iwH7V">
-                                <ref role="1PxNhF" to="gvox:nnAfPWl74P" resolve="Canvas" />
-                                <node concept="2OqwBi" id="nnAfPWnL7b" role="1PxMeX">
+                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
+                                <node concept="2OqwBi" id="nnAfPWnL7b" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnL3K" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnLq_" role="2OqNvi" />
                                 </node>
@@ -532,11 +533,11 @@
                               <node concept="2OqwBi" id="nnAfPWn_Ul" role="2Oq$k0">
                                 <node concept="30H73N" id="nnAfPWn_RK" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="nnAfPWnA3Q" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="gvox:nnAfPWm$BO" />
+                                  <ref role="3Tt5mk" to="gvox:nnAfPWm$BO" resolve="color" />
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="nnAfPWnAos" role="2OqNvi">
-                                <ref role="3Tt5mk" to="gvox:nnAfPWlmFA" />
+                                <ref role="3Tt5mk" to="gvox:nnAfPWlmFA" resolve="color" />
                               </node>
                             </node>
                           </node>
@@ -562,8 +563,8 @@
                             <node concept="1iwH70" id="nnAfPWnMgC" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnMIi" role="1iwH7V">
-                                <ref role="1PxNhF" to="gvox:nnAfPWl74P" resolve="Canvas" />
-                                <node concept="2OqwBi" id="nnAfPWnMns" role="1PxMeX">
+                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
+                                <node concept="2OqwBi" id="nnAfPWnMns" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnMk5" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnMy0" role="2OqNvi" />
                                 </node>
@@ -693,8 +694,8 @@
                             <node concept="1iwH70" id="nnAfPWnIH_" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnJnT" role="1iwH7V">
-                                <ref role="1PxNhF" to="gvox:nnAfPWl74P" resolve="Canvas" />
-                                <node concept="2OqwBi" id="nnAfPWnISd" role="1PxMeX">
+                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
+                                <node concept="2OqwBi" id="nnAfPWnISd" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnIL2" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnJbB" role="2OqNvi" />
                                 </node>
@@ -721,11 +722,11 @@
                               <node concept="2OqwBi" id="nnAfPWnATe" role="2Oq$k0">
                                 <node concept="30H73N" id="nnAfPWnAQD" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="nnAfPWnB34" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="gvox:nnAfPWm$BO" />
+                                  <ref role="3Tt5mk" to="gvox:nnAfPWm$BO" resolve="color" />
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="nnAfPWnBnE" role="2OqNvi">
-                                <ref role="3Tt5mk" to="gvox:nnAfPWlmFA" />
+                                <ref role="3Tt5mk" to="gvox:nnAfPWlmFA" resolve="color" />
                               </node>
                             </node>
                           </node>
@@ -751,8 +752,8 @@
                             <node concept="1iwH70" id="nnAfPWnK1Y" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnKvG" role="1iwH7V">
-                                <ref role="1PxNhF" to="gvox:nnAfPWl74P" resolve="Canvas" />
-                                <node concept="2OqwBi" id="nnAfPWnK8Q" role="1PxMeX">
+                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
+                                <node concept="2OqwBi" id="nnAfPWnK8Q" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnK5r" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnKjq" role="2OqNvi" />
                                 </node>

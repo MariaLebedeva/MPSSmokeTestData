@@ -2,7 +2,8 @@
 <model ref="r:4a6915fd-1679-4442-baa1-3e5c7f5f64f2(HierarchicalSrtucture.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,7 +12,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
@@ -27,52 +28,52 @@
   <node concept="1TIwiD" id="7wd_wNd7Q9T">
     <property role="TrG5h" value="A" />
     <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="1160575109" />
+    <property role="EcuMT" value="8650735440973750905" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7Qb7">
     <property role="TrG5h" value="B" />
-    <property role="1pbfSe" value="1160575187" />
+    <property role="EcuMT" value="8650735440973750983" />
     <ref role="1TJDcQ" node="7wd_wNd7Q9T" resolve="A" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7Qdj">
     <property role="TrG5h" value="C1" />
-    <property role="1pbfSe" value="1160575327" />
+    <property role="EcuMT" value="8650735440973751123" />
     <ref role="1TJDcQ" node="7wd_wNd7Qb7" resolve="B" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7Qew">
     <property role="TrG5h" value="C2" />
-    <property role="1pbfSe" value="1160575404" />
+    <property role="EcuMT" value="8650735440973751200" />
     <ref role="1TJDcQ" node="7wd_wNd7Qb7" resolve="B" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7QfH">
     <property role="TrG5h" value="C3" />
-    <property role="1pbfSe" value="1160575481" />
+    <property role="EcuMT" value="8650735440973751277" />
     <ref role="1TJDcQ" node="7wd_wNd7Qb7" resolve="B" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7RJD">
     <property role="TrG5h" value="D11" />
-    <property role="1pbfSe" value="1160581621" />
+    <property role="EcuMT" value="8650735440973757417" />
     <ref role="1TJDcQ" node="7wd_wNd7Qdj" resolve="C1" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7RLp">
     <property role="TrG5h" value="D21" />
-    <property role="1pbfSe" value="1160581733" />
+    <property role="EcuMT" value="8650735440973757529" />
     <ref role="1TJDcQ" node="7wd_wNd7Qew" resolve="C2" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7RMO">
     <property role="TrG5h" value="D22" />
-    <property role="1pbfSe" value="1160581824" />
+    <property role="EcuMT" value="8650735440973757620" />
     <ref role="1TJDcQ" node="7wd_wNd7Qew" resolve="C2" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7RO$">
     <property role="TrG5h" value="D31" />
-    <property role="1pbfSe" value="1160581936" />
+    <property role="EcuMT" value="8650735440973757732" />
     <ref role="1TJDcQ" node="7wd_wNd7QfH" resolve="C3" />
   </node>
   <node concept="1TIwiD" id="7wd_wNd7SoP">
     <property role="TrG5h" value="D32" />
-    <property role="1pbfSe" value="1160584257" />
+    <property role="EcuMT" value="8650735440973760053" />
     <ref role="1TJDcQ" node="7wd_wNd7QfH" resolve="C3" />
   </node>
 </model>

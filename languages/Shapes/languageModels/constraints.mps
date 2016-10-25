@@ -79,13 +79,14 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+      </concept>
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
-        <reference id="1140138128738" name="concept" index="1PxNhF" />
-        <child id="1140138123956" name="leftExpression" index="1PxMeX" />
-      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -100,7 +101,7 @@
   <node concept="1M2fIO" id="nnAfPWlWMF">
     <ref role="1M2myG" to="gvox:nnAfPWlmFo" resolve="ColorReference" />
     <node concept="1N5Pfh" id="nnAfPWlWMG" role="1Mr941">
-      <ref role="1N5Vy1" to="gvox:nnAfPWlmFA" />
+      <ref role="1N5Vy1" to="gvox:nnAfPWlmFA" resolve="color" />
       <node concept="13QW63" id="nnAfPWmb$M" role="1N6uqs">
         <node concept="3clFbS" id="nnAfPWmb$O" role="2VODD2">
           <node concept="3clFbF" id="nnAfPWmb_e" role="3cqZAp">
@@ -124,8 +125,8 @@
                       <node concept="3clFbF" id="nnAfPWmwjw" role="3cqZAp">
                         <node concept="2OqwBi" id="nnAfPWmwzM" role="3clFbG">
                           <node concept="1PxgMI" id="nnAfPWmwor" role="2Oq$k0">
-                            <ref role="1PxNhF" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
-                            <node concept="37vLTw" id="nnAfPWmwjv" role="1PxMeX">
+                            <ref role="1m5ApE" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
+                            <node concept="37vLTw" id="nnAfPWmwjv" role="1m5AlR">
                               <ref role="3cqZAo" node="nnAfPWmbKX" resolve="child" />
                             </node>
                           </node>

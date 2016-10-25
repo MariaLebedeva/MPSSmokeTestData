@@ -2,7 +2,7 @@
 <model ref="r:6875fa70-c13e-4eb6-81f2-7332071c6881(Shapes.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -182,7 +182,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F2HdR" id="nnAfPWlfXV" role="3EZMnx">
-        <ref role="1NtTu8" to="gvox:nnAfPWl77r" />
+        <ref role="1NtTu8" to="gvox:nnAfPWl77r" resolve="shapes" />
         <node concept="2iRkQZ" id="nnAfPWlfXY" role="2czzBx" />
         <node concept="VPM3Z" id="nnAfPWlfXZ" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -197,7 +197,7 @@
   <node concept="24kQdi" id="nnAfPWlViS">
     <ref role="1XX52x" to="gvox:nnAfPWlmFo" resolve="ColorReference" />
     <node concept="1iCGBv" id="nnAfPWlViX" role="2wV5jI">
-      <ref role="1NtTu8" to="gvox:nnAfPWlmFA" />
+      <ref role="1NtTu8" to="gvox:nnAfPWlmFA" resolve="color" />
       <node concept="1sVBvm" id="nnAfPWlViZ" role="1sWHZn">
         <node concept="3F0A7n" id="nnAfPWlVj9" role="2wV5jI">
           <property role="1Intyy" value="true" />
@@ -214,7 +214,7 @@
         <property role="3F0ifm" value="color:" />
       </node>
       <node concept="3F1sOY" id="nnAfPWmIWp" role="3EZMnx">
-        <ref role="1NtTu8" to="gvox:nnAfPWm$BO" />
+        <ref role="1NtTu8" to="gvox:nnAfPWm$BO" resolve="color" />
       </node>
       <node concept="l2Vlx" id="nnAfPWmIVO" role="2iSdaV" />
     </node>
