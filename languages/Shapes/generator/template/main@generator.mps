@@ -182,9 +182,12 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -505,10 +508,12 @@
                             <node concept="1iwH70" id="nnAfPWnL0j" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnLAT" role="1iwH7V">
-                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 <node concept="2OqwBi" id="nnAfPWnL7b" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnL3K" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnLq_" role="2OqNvi" />
+                                </node>
+                                <node concept="chp4Y" id="483HG705_Sh" role="3oSUPX">
+                                  <ref role="cht4Q" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 </node>
                               </node>
                             </node>
@@ -563,10 +568,12 @@
                             <node concept="1iwH70" id="nnAfPWnMgC" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnMIi" role="1iwH7V">
-                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 <node concept="2OqwBi" id="nnAfPWnMns" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnMk5" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnMy0" role="2OqNvi" />
+                                </node>
+                                <node concept="chp4Y" id="483HG705_Sj" role="3oSUPX">
+                                  <ref role="cht4Q" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 </node>
                               </node>
                             </node>
@@ -694,10 +701,12 @@
                             <node concept="1iwH70" id="nnAfPWnIH_" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnJnT" role="1iwH7V">
-                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 <node concept="2OqwBi" id="nnAfPWnISd" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnIL2" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnJbB" role="2OqNvi" />
+                                </node>
+                                <node concept="chp4Y" id="483HG705_Si" role="3oSUPX">
+                                  <ref role="cht4Q" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 </node>
                               </node>
                             </node>
@@ -752,10 +761,12 @@
                             <node concept="1iwH70" id="nnAfPWnK1Y" role="2OqNvi">
                               <ref role="1iwH77" node="nnAfPWnHtD" resolve="graphicParam" />
                               <node concept="1PxgMI" id="nnAfPWnKvG" role="1iwH7V">
-                                <ref role="1m5ApE" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 <node concept="2OqwBi" id="nnAfPWnK8Q" role="1m5AlR">
                                   <node concept="30H73N" id="nnAfPWnK5r" role="2Oq$k0" />
                                   <node concept="1mfA1w" id="nnAfPWnKjq" role="2OqNvi" />
+                                </node>
+                                <node concept="chp4Y" id="483HG705_Sk" role="3oSUPX">
+                                  <ref role="cht4Q" to="gvox:nnAfPWl74P" resolve="Canvas" />
                                 </node>
                               </node>
                             </node>
