@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="masha.thesimpliest.devkit" uuid="794bda00-c6df-47b8-b9ef-ab6d13fadf40">
+  <exported-language name="e99b0e32-2676-4476-ae9f-7662cf709b95(mps.masha.lang)" />
+  <exported-solutions>
+    <exported-solution>b46c1fe6-eb41-4a07-9b22-217500a80071(masha.genplan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:8ee2bdfe-3d40-470b-b82d-b29c618ee127(masha.genplan.plans@genplan)" />
+</dev-kit>
+
