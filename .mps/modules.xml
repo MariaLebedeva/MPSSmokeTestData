@@ -3,8 +3,11 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/HierarchicalSrtucture/HierarchicalSrtucture.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage/NewLanguage.mpl" folder="typesystem_annotations" />
+      <modulePath path="$PROJECT_DIR$/languages/PCLang/PCLang.mpl" folder="typesystem_annotations" />
       <modulePath path="$PROJECT_DIR$/languages/Shapes/Shapes.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Shapes/sandbox/Shapes.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="typesystem_annotations" />
       <modulePath path="$PROJECT_DIR$/solutions/TestModes/TestModes.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestRunDebug/TestRunDebug.msd" folder="" />
     </projectModules>
