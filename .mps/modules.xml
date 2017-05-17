@@ -7,6 +7,8 @@
       <modulePath path="$PROJECT_DIR$/languages/PCLang/PCLang.mpl" folder="typesystem annotations" />
       <modulePath path="$PROJECT_DIR$/languages/Shapes/Shapes.mpl" folder="old shapes sample" />
       <modulePath path="$PROJECT_DIR$/languages/Shapes/sandbox/Shapes.sandbox.msd" folder="old shapes sample" />
+      <modulePath path="$PROJECT_DIR$/languages/jb.mary.test.shortIfLang/jb.mary.test.shortIfLang.mpl" folder="base language extensions" />
+      <modulePath path="$PROJECT_DIR$/languages/jb.mary.test.shortIfLang/sandbox/jb.mary.test.shortIfLang.sandbox.msd" folder="base language extensions" />
       <modulePath path="$PROJECT_DIR$/languages/mps.masha.summator/mps.masha.summator.mpl" folder="sum of numbers" />
       <modulePath path="$PROJECT_DIR$/languages/mps.masha.summator/sandbox/mps.masha.summator.sandbox.msd" folder="sum of numbers" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="typesystem annotations" />
