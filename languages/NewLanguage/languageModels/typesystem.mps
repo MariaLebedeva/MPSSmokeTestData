@@ -2,8 +2,7 @@
 <model ref="r:20be05c2-7b69-414e-ae10-8e9a6d92f502(NewLanguage.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="8x9b" ref="r:1d435629-e1c1-4045-aead-484dcd7f8a7e(NewLanguage.structure)" />
@@ -97,7 +96,7 @@
                 <ref role="1YBMHb" node="5mFv_7mRE8E" resolve="decl" />
               </node>
               <node concept="3TrEf2" id="5mFv_7mRKN$" role="2OqNvi">
-                <ref role="3Tt5mk" to="8x9b:5mFv_7mRsE5" />
+                <ref role="3Tt5mk" to="8x9b:5mFv_7mRsE5" resolve="type" />
               </node>
             </node>
           </node>
@@ -153,7 +152,7 @@
                 <ref role="1YBMHb" node="5mFv_7mRL2j" resolve="ref" />
               </node>
               <node concept="3TrEf2" id="5mFv_7mRLeI" role="2OqNvi">
-                <ref role="3Tt5mk" to="8x9b:5mFv_7mRCMS" />
+                <ref role="3Tt5mk" to="8x9b:5mFv_7mRCMS" resolve="decl" />
               </node>
             </node>
           </node>
@@ -181,7 +180,7 @@
                 <ref role="1YBMHb" node="5mFv_7mRL2j" resolve="ref" />
               </node>
               <node concept="3TrEf2" id="Sx2yTlQy_o" role="2OqNvi">
-                <ref role="3Tt5mk" to="8x9b:Sx2yTlQuhq" />
+                <ref role="3Tt5mk" to="8x9b:Sx2yTlQuhq" resolve="init" />
               </node>
             </node>
           </node>

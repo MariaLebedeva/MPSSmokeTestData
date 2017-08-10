@@ -2,8 +2,7 @@
 <model ref="r:9b1dc6fa-f791-46b9-9caf-851fa1bf994c(PCLang.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="41tq" ref="r:89d2d7cf-eaa5-400a-9c6a-748e2ddf7d75(PCLang.structure)" implicit="true" />
@@ -104,7 +103,7 @@
                 <ref role="1YBMHb" node="mfGBUdYd6w" resolve="pc" />
               </node>
               <node concept="3TrEf2" id="mfGBUdYeSf" role="2OqNvi">
-                <ref role="3Tt5mk" to="41tq:4Xk3cNc6kd8" />
+                <ref role="3Tt5mk" to="41tq:4Xk3cNc6kd8" resolve="alternativeNode" />
               </node>
             </node>
           </node>
@@ -166,7 +165,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="2G9Fk2jpooL" role="2OqNvi">
-                <ref role="3Tt5mk" to="41tq:4Xk3cNc6kd8" />
+                <ref role="3Tt5mk" to="41tq:4Xk3cNc6kd8" resolve="alternativeNode" />
               </node>
             </node>
           </node>
