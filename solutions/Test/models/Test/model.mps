@@ -4,6 +4,7 @@
   <languages>
     <use id="9723eddf-e199-4aab-9da6-c65f6acb2f49" name="PCLang" version="0" />
     <use id="5e52482c-06e4-41ac-8a97-2616ff2191a3" name="NewLanguage" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports />
   <registry>
@@ -36,10 +37,64 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="3717301156197626279" name="jetbrains.mps.lang.core.structure.BasePlaceholder" flags="ng" index="3DQ70j">
+        <child id="3717301156197626301" name="content" index="3DQ709" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+        <property id="6328114375520539774" name="bold" index="1X82S1" />
+        <property id="6328114375520539796" name="underlined" index="1X82VF" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="ng" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
     </language>
   </registry>
   <node concept="23tFjw" id="KZhghZ0vQS">
-    <property role="TrG5h" value="1) No Presence Conditions - Double != Int" />
+    <property role="TrG5h" value="1) No Presence Conditions" />
+    <node concept="3DQ70j" id="cRWYxDfpKL" role="lGtFl">
+      <property role="3V$3am" value="contents" />
+      <property role="3V$3ak" value="5e52482c-06e4-41ac-8a97-2616ff2191a3/6173166604203707057/6173166604203707059" />
+      <node concept="1Pa9Pv" id="cRWYxDfpKN" role="3DQ709">
+        <node concept="1PaTwC" id="cRWYxDfpKO" role="1PaQFQ">
+          <node concept="3oM_SD" id="cRWYxDfpKW" role="1PaTwD">
+            <property role="3oM_SC" value="No" />
+            <property role="1X82S1" value="true" />
+            <property role="1X82VF" value="true" />
+          </node>
+          <node concept="3oM_SD" id="cRWYxDfpKY" role="1PaTwD">
+            <property role="3oM_SC" value="Presence" />
+            <property role="1X82S1" value="true" />
+            <property role="1X82VF" value="true" />
+          </node>
+          <node concept="3oM_SD" id="cRWYxDfpLa" role="1PaTwD">
+            <property role="3oM_SC" value="Conditions" />
+            <property role="1X82S1" value="true" />
+            <property role="1X82VF" value="true" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="cRWYxDfpQZ" role="1PaQFQ">
+          <node concept="3oM_SD" id="cRWYxDfpRc" role="1PaTwD">
+            <property role="3oM_SC" value="Double" />
+          </node>
+          <node concept="3oM_SD" id="cRWYxDfpLj" role="1PaTwD">
+            <property role="3oM_SC" value="!=" />
+          </node>
+          <node concept="3oM_SD" id="cRWYxDfpLp" role="1PaTwD">
+            <property role="3oM_SC" value="Int" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="23tFgI" id="KZhghZ0vQT" role="23tFjy">
       <property role="TrG5h" value="hello" />
       <node concept="23tvug" id="KZhghZ0vR2" role="23tFjk" />
@@ -53,6 +108,23 @@
   </node>
   <node concept="23tFjw" id="6Q9fNZWJEdc">
     <property role="TrG5h" value="2) PC on type (no literal) - works because substitution works on copied nodes in Typesystem" />
+    <node concept="3DQ70j" id="cRWYxDfpLI" role="lGtFl">
+      <property role="3V$3am" value="contents" />
+      <property role="3V$3ak" value="5e52482c-06e4-41ac-8a97-2616ff2191a3/6173166604203707057/6173166604203707059" />
+      <node concept="1Pa9Pv" id="cRWYxDfpLK" role="3DQ709">
+        <node concept="1PaTwC" id="cRWYxDfpLL" role="1PaQFQ">
+          <node concept="3oM_SD" id="cRWYxDfpLO" role="1PaTwD">
+            <property role="3oM_SC" value="PC" />
+          </node>
+          <node concept="3oM_SD" id="cRWYxDfpLQ" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="cRWYxDfpLT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="23tFgI" id="6Q9fNZWJEdd" role="23tFjy">
       <property role="TrG5h" value="hello2" />
       <node concept="23tvug" id="6Q9fNZWJEdm" role="23tFjk">

@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/languages/mps.masha.lang/sandbox/mps.masha.lang.sandbox.msd" folder="generation plan sample" />
       <modulePath path="$PROJECT_DIR$/languages/mps.masha.summator/mps.masha.summator.mpl" folder="sum of numbers" />
       <modulePath path="$PROJECT_DIR$/languages/mps.masha.summator/sandbox/mps.masha.summator.sandbox.msd" folder="sum of numbers" />
+      <modulePath path="$PROJECT_DIR$/solutions/LanguageTests/LanguageTests.msd" folder="typesystem annotations" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="typesystem annotations" />
       <modulePath path="$PROJECT_DIR$/solutions/TestModes/TestModes.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestRunDebug/TestRunDebug.msd" folder="" />
