@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="b7c4b1a6-d4cd-4c03-90e1-208d0875dc35" name="jb.mary.test.shortIfLang" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -121,7 +121,7 @@
                       <node concept="2OqwBi" id="1QPX3LPg1MZ" role="3clFbG">
                         <node concept="30H73N" id="1QPX3LPg1JE" role="2Oq$k0" />
                         <node concept="3TrEf2" id="1QPX3LPg2fh" role="2OqNvi">
-                          <ref role="3Tt5mk" to="5tvh:1QPX3LPfUlv" />
+                          <ref role="3Tt5mk" to="5tvh:1QPX3LPfUlv" resolve="stmt" />
                         </node>
                       </node>
                     </node>
@@ -139,7 +139,7 @@
                     <node concept="2OqwBi" id="1QPX3LPg1h0" role="3clFbG">
                       <node concept="30H73N" id="1QPX3LPg1dF" role="2Oq$k0" />
                       <node concept="3TrEf2" id="1QPX3LPg1Hi" role="2OqNvi">
-                        <ref role="3Tt5mk" to="5tvh:1QPX3LPfUlt" />
+                        <ref role="3Tt5mk" to="5tvh:1QPX3LPfUlt" resolve="condition" />
                       </node>
                     </node>
                   </node>
