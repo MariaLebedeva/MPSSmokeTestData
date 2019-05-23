@@ -121,7 +121,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="5mFv_7mSlVE" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
                     </node>
                   </node>
                 </node>

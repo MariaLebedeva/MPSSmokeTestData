@@ -162,7 +162,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="nnAfPWkokt" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="nnAfPWkolM" role="37wK5m">
                 <property role="Xl_RC" value="Exit main()" />
               </node>
@@ -199,7 +199,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="nnAfPWkqNd" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="3cpWs3" id="nnAfPWktes" role="37wK5m">
                 <node concept="37vLTw" id="nnAfPWktte" role="3uHU7w">
                   <ref role="3cqZAo" node="nnAfPWkqbX" resolve="average" />
@@ -238,7 +238,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="nnAfPWktAp" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="nnAfPWktFT" role="37wK5m">
                 <property role="Xl_RC" value="Exit average()" />
               </node>
@@ -270,7 +270,7 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="nnAfPWkpnK" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="nnAfPWkpp3" role="37wK5m">
                 <property role="Xl_RC" value="Computing average." />
               </node>
@@ -412,7 +412,7 @@
                   <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                 </node>
                 <node concept="liA8E" id="6xS7stDEq1v" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~PrintStream.println(double):void" resolve="println" />
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(double)" resolve="println" />
                   <node concept="AH0OO" id="6xS7stDEqvk" role="37wK5m">
                     <node concept="37vLTw" id="6xS7stDEqAr" role="AHEQo">
                       <ref role="3cqZAo" node="6xS7stDEoKf" resolve="i" />
@@ -471,7 +471,7 @@
                     <property role="$nhwW" value="100.0" />
                   </node>
                   <node concept="2YIFZM" id="6xS7stDEfGJ" role="3uHU7B">
-                    <ref role="37wK5l" to="wyt6:~Math.random():double" resolve="random" />
+                    <ref role="37wK5l" to="wyt6:~Math.random()" resolve="random" />
                     <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
                   </node>
                 </node>
@@ -536,7 +536,7 @@
             <node concept="3clFbF" id="6xS7stDEiTX" role="3cqZAp">
               <node concept="37vLTI" id="6xS7stDEjk9" role="3clFbG">
                 <node concept="2YIFZM" id="6xS7stDEjv6" role="37vLTx">
-                  <ref role="37wK5l" to="wyt6:~Math.min(double,double):double" resolve="min" />
+                  <ref role="37wK5l" to="wyt6:~Math.min(double,double)" resolve="min" />
                   <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
                   <node concept="37vLTw" id="6xS7stDEjwh" role="37wK5m">
                     <ref role="3cqZAo" node="6xS7stDEh0k" resolve="minValue" />

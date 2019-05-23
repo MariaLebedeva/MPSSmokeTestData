@@ -226,7 +226,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="Sx2yTlQki7" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
                 <node concept="Xl_RD" id="Sx2yTlQkit" role="37wK5m">
                   <property role="Xl_RC" value="." />
                 </node>
