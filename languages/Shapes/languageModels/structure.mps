@@ -52,9 +52,9 @@
     <property role="EcuMT" value="420973304662472424" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="nnAfPWm$BO" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="color" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="420973304662870516" />
       <ref role="20lvS9" node="nnAfPWlmFo" resolve="ColorReference" />
     </node>
@@ -107,9 +107,9 @@
     <property role="EcuMT" value="420973304662487349" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="nnAfPWl77r" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="shapes" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="IQ2ns" value="420973304662487515" />
       <ref role="20lvS9" node="nnAfPWl3rC" resolve="Shape" />
     </node>
@@ -125,9 +125,8 @@
     <property role="EcuMT" value="420973304662551256" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="nnAfPWlmFA" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="color" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="420973304662551270" />
       <ref role="20lvS9" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
     </node>

@@ -47,7 +47,6 @@
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
-        <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="6405009306797516074" name="jetbrains.mps.lang.typesystem.structure.SubstituteTypeRule" flags="ig" index="3qnSWH">
@@ -57,7 +56,8 @@
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
       <concept id="1174643105530" name="jetbrains.mps.lang.typesystem.structure.InferenceRule" flags="ig" index="1YbPZF">
-        <child id="7307171874933775112" name="supercedesFun" index="2bjP4i" />
+        <child id="7307171874933775112" name="supersedesFun" index="2bjP4i" />
+        <child id="422148324487088858" name="overridesFun" index="ujSXK" />
       </concept>
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
@@ -133,7 +133,7 @@
         </node>
       </node>
     </node>
-    <node concept="bXqS6" id="2cZDTBPRrH6" role="bX4a1">
+    <node concept="bXqS6" id="2cZDTBPRrH6" role="ujSXK">
       <node concept="3clFbS" id="2cZDTBPRrH7" role="2VODD2">
         <node concept="3clFbF" id="2cZDTBPRrI9" role="3cqZAp">
           <node concept="3clFbT" id="2cZDTBPRrI8" role="3clFbG">

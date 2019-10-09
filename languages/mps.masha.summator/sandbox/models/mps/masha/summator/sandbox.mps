@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="4b6e04c7-e3b1-4211-8dbd-011e66ef7df0" name="mps.masha.summator" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
   </languages>
   <imports />
   <registry>

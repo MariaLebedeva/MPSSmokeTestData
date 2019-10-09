@@ -11,7 +11,7 @@
     <dependency reexport="false">b46c1fe6-eb41-4a07-9b22-217500a80071(masha.genplan)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
+    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:e99b0e32-2676-4476-ae9f-7662cf709b95:mps.masha.lang" version="0" />
   </languageVersions>
   <dependencyVersions>

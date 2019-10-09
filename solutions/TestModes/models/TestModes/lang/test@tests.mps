@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="9" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -19,8 +19,8 @@
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
-        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
-        <child id="1229187707859" name="result" index="LiZbd" />
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
+        <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
         <child id="1229187755283" name="code" index="LjaKd" />
       </concept>
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
@@ -106,36 +106,40 @@
   </registry>
   <node concept="LiM7Y" id="nnAfPWk2Sx">
     <property role="TrG5h" value="BLFieldInitialization" />
-    <node concept="312cEg" id="nnAfPWk3ef" role="LiRBU">
-      <property role="TrG5h" value="i" />
-      <node concept="3Tm6S6" id="nnAfPWk3eg" role="1B3o_S" />
-      <node concept="10Oyi0" id="nnAfPWk4Bi" role="1tU5fm" />
-      <node concept="LIFWc" id="nnAfPWk4Br" role="lGtFl">
-        <property role="ZRATv" value="true" />
-        <property role="OXtK3" value="true" />
-        <property role="p6zMq" value="1" />
-        <property role="p6zMs" value="1" />
-        <property role="LIFWd" value="VDNCC_property_name" />
+    <node concept="3clFbS" id="nnAfPWk5qA" role="LjaKd">
+      <node concept="2TK7Tu" id="nnAfPWk5q_" role="3cqZAp">
+        <property role="2TTd_B" value="=1" />
       </node>
     </node>
-    <node concept="312cEg" id="nnAfPWk4Bv" role="LiZbd">
-      <property role="TrG5h" value="i" />
-      <node concept="3Tm6S6" id="nnAfPWk4Bw" role="1B3o_S" />
-      <node concept="10Oyi0" id="nnAfPWk4BB" role="1tU5fm" />
-      <node concept="3cmrfG" id="nnAfPWk5pW" role="33vP2m">
-        <property role="3cmrfH" value="1" />
-        <node concept="LIFWc" id="nnAfPWk5q5" role="lGtFl">
+    <node concept="1qefOq" id="4cXUYJNqwlc" role="25YQCW">
+      <node concept="312cEg" id="nnAfPWk3ef" role="1qenE9">
+        <property role="TrG5h" value="i" />
+        <node concept="3Tm6S6" id="nnAfPWk3eg" role="1B3o_S" />
+        <node concept="10Oyi0" id="nnAfPWk4Bi" role="1tU5fm" />
+        <node concept="LIFWc" id="nnAfPWk4Br" role="lGtFl">
           <property role="ZRATv" value="true" />
           <property role="OXtK3" value="true" />
           <property role="p6zMq" value="1" />
           <property role="p6zMs" value="1" />
-          <property role="LIFWd" value="property_value" />
+          <property role="LIFWd" value="VDNCC_property_name" />
         </node>
       </node>
     </node>
-    <node concept="3clFbS" id="nnAfPWk5qA" role="LjaKd">
-      <node concept="2TK7Tu" id="nnAfPWk5q_" role="3cqZAp">
-        <property role="2TTd_B" value="=1" />
+    <node concept="1qefOq" id="4cXUYJNqwld" role="25YQFr">
+      <node concept="312cEg" id="nnAfPWk4Bv" role="1qenE9">
+        <property role="TrG5h" value="i" />
+        <node concept="3Tm6S6" id="nnAfPWk4Bw" role="1B3o_S" />
+        <node concept="10Oyi0" id="nnAfPWk4BB" role="1tU5fm" />
+        <node concept="3cmrfG" id="nnAfPWk5pW" role="33vP2m">
+          <property role="3cmrfH" value="1" />
+          <node concept="LIFWc" id="nnAfPWk5q5" role="lGtFl">
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="1" />
+            <property role="p6zMs" value="1" />
+            <property role="LIFWd" value="property_value" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
