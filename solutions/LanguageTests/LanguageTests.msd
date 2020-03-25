@@ -5,6 +5,12 @@
       <sourceRoot location="models" />
     </modelRoot>
   </models>
+  <facets>
+    <facet type="java">
+      <classes generated="true" path="${module}/classes_gen" />
+    </facet>
+    <facet type="tests" />
+  </facets>
   <sourcePath />
   <languageVersions>
     <language slang="l:5e52482c-06e4-41ac-8a97-2616ff2191a3:NewLanguage" version="0" />
