@@ -11,7 +11,13 @@
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -100,6 +106,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -672,6 +679,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="36qLrsL4rdJ" role="3cqZAp" />
         <node concept="3SKdUt" id="5h99Ch3rAo2" role="3cqZAp">
           <node concept="1PaTwC" id="5h99Ch3rAo1" role="1aUNEU">
             <node concept="3oM_SD" id="5h99Ch3r_8S" role="1PaTwD">
@@ -692,20 +700,6 @@
           <node concept="1PaTwC" id="5h99Ch3rADb" role="1aUNEU">
             <node concept="3oM_SD" id="5h99Ch3rALT" role="1PaTwD">
               <property role="3oM_SC" value="tubeLight.printBillType();" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="5h99Ch3rA6F" role="3cqZAp">
-          <node concept="1PaTwC" id="5h99Ch3rA6G" role="1aUNEU">
-            <node concept="3oM_SD" id="5h99Ch3rAMA" role="1PaTwD">
-              <property role="3oM_SC" value="light1.printBillType();" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="5h99Ch3rBjQ" role="3cqZAp">
-          <node concept="1PaTwC" id="5h99Ch3rBjR" role="1aUNEU">
-            <node concept="3oM_SD" id="5h99Ch3rBjS" role="1PaTwD">
-              <property role="3oM_SC" value="light2.printBillType();" />
             </node>
           </node>
         </node>
@@ -731,7 +725,7 @@
             <node concept="liA8E" id="5h99Ch3rCKj" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
               <node concept="Xl_RD" id="5h99Ch3rCT$" role="37wK5m">
-                <property role="Xl_RC" value="Invoke overloaded method:" />
+                <property role="Xl_RC" value="Invoke overloaded methodddd:" />
               </node>
             </node>
           </node>
@@ -751,7 +745,25 @@
         <ref role="3uigEE" node="5h99Ch3ra25" resolve="InvalidHoursException" />
       </node>
     </node>
+    <node concept="2tJIrI" id="36qLrsL4qNA" role="jymVt" />
     <node concept="3Tm1VV" id="5h99Ch3rnWi" role="1B3o_S" />
+    <node concept="3clFb_" id="36qLrsL4qVz" role="jymVt">
+      <property role="TrG5h" value="toString" />
+      <node concept="3Tm1VV" id="36qLrsL4qV$" role="1B3o_S" />
+      <node concept="3uibUv" id="36qLrsL4qVA" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="36qLrsL4qVB" role="3clF47">
+        <node concept="3clFbF" id="36qLrsL4qVE" role="3cqZAp">
+          <node concept="3nyPlj" id="36qLrsL4qVD" role="3clFbG">
+            <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="36qLrsL4qVC" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
 </model>
 
