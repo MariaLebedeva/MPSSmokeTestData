@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="masha.thesimpliest.devkit" uuid="794bda00-c6df-47b8-b9ef-ab6d13fadf40">
   <exported-language name="e99b0e32-2676-4476-ae9f-7662cf709b95(mps.masha.lang)" />
+  <exported-language name="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <exported-solutions>
     <exported-solution>b46c1fe6-eb41-4a07-9b22-217500a80071(masha.genplan)</exported-solution>
   </exported-solutions>
