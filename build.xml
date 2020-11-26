@@ -1,0 +1,20 @@
+<project name="projectMigration" default="migrate" basedir=".">
+  <property name="env.JAVA_HOME" value="${java.home}/.."/>
+  <property name="jdk.home" value="${env.JAVA_HOME}"/>
+  <property name="mps.home" location="${basedir}/../../../../Applications/MPS 2020.2 2.app/Contents"/>
+  <property name="artifacts.mps" location="${mps.home}"/>
+  <path id="path.mps.ant.path">
+    <pathelement location="${mps.home}/lib/ant/lib/ant-mps.jar"/>
+    <pathelement location="${mps.home}/lib/jdom.jar"/>
+    <pathelement location="${mps.home}/lib/log4j.jar"/>
+  </path>
+  <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path"/>
+  <target name="migrate">
+    <migrate project="${basedir}">
+      <macro name="mps_home" path="${mps.home}"/>
+      <jvmargs>
+        <arg value="-ea" />
+      </jvmargs>
+    </migrate>
+  </target>
+</project>
