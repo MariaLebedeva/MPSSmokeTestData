@@ -2,6 +2,7 @@
 <model ref="r:ca33e148-bc45-446f-a01b-00a2a7a154bc(TestRunDebug.perRootModel.lightSample)" content="header">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
+  <attribute name="content" value="header" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
   </languages>
