@@ -1,12 +1,14 @@
 <project name="projectMigration" default="migrate" basedir=".">
   <property name="env.JAVA_HOME" value="${java.home}/.."/>
   <property name="jdk.home" value="${env.JAVA_HOME}"/>
-  <property name="mps.home" location="${basedir}/../../../../Applications/MPS 2020.3.app/Contents"/>
+  <property name="mps.home" location="/Applications/MPS 2021.3 EAP.app/Contents"/>
   <property name="artifacts.mps" location="${mps.home}"/>
   <path id="path.mps.ant.path">
     <pathelement location="${mps.home}/lib/ant/lib/ant-mps.jar"/>
-    <pathelement location="${mps.home}/lib/jdom.jar"/>
-    <pathelement location="${mps.home}/lib/log4j.jar"/>
+    <fileset dir="${mps.home}/lib">
+      <include name="util.jar" />
+      <include name="3rd-party-rt.jar" />
+    </fileset>
   </path>
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path"/>
   <target name="migrate">
