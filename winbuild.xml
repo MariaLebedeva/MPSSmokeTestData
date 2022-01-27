@@ -1,0 +1,24 @@
+<project name="projectMigration" default="migrate" basedir=".">
+    <property name="env.JAVA_HOME" value="${java.home}/.."/>
+    <property name="jdk.home" value="${env.JAVA_HOME}"/>
+    <property name="mps.home" location="C:\Program Files\JetBrains\MPS 2021.3"/>
+    <property name="artifacts.mps" location="${mps.home}"/>
+    <path id="path.mps.ant.path">
+        <pathelement location="${mps.home}/lib/ant/lib/ant-mps.jar"/>
+        <fileset dir="${mps.home}/lib">
+            <include name="util.jar" />
+            <include name="3rd-party-rt.jar" />
+        </fileset>
+    </path>
+    <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path"/>
+    <target name="migrate">
+        <migrate project="${basedir}">
+            <macro name="mps_home" path="${mps.home}"/>
+            <jvmargs>
+                <arg value="-ea" />
+                <arg value="-Didea.config.path=${basedir}/config" />
+                <arg value="-Didea.system.path=${basedir}/system" />
+            </jvmargs>
+        </migrate>
+    </target>
+</project>
