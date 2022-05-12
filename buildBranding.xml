@@ -112,12 +112,12 @@
     <copy todir="${build.layout}/plugins/mps-make">
       <fileset dir="${artifacts.mpsMakePlugin}/mps-make" />
     </copy>
-    <mkdir dir="${build.layout}/plugins/ForSmokeTest" />
-    <mkdir dir="${build.layout}/plugins/ForSmokeTest/META-INF" />
-    <echoxml file="${build.layout}/plugins/ForSmokeTest/META-INF/plugin.xml">
+    <mkdir dir="${build.layout}/plugins/summator" />
+    <mkdir dir="${build.layout}/plugins/summator/META-INF" />
+    <echoxml file="${build.layout}/plugins/summator/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>ForSmokeTest</id>
-        <name>ForSmokeTest</name>
+        <id>SummatorPlugin</id>
+        <name>SummatorPlugin</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
         <depends>com.intellij.modules.platform</depends>
@@ -127,13 +127,13 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.layout}/plugins/ForSmokeTest/lib" />
-    <mkdir dir="${build.tmp}/default/ForSmokeTest.jar" />
-    <mkdir dir="${build.tmp}/default/ForSmokeTest.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/ForSmokeTest.jar/META-INF/plugin.xml">
+    <mkdir dir="${build.layout}/plugins/summator/lib" />
+    <mkdir dir="${build.tmp}/default/summator.jar" />
+    <mkdir dir="${build.tmp}/default/summator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/summator.jar/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>ForSmokeTest</id>
-        <name>ForSmokeTest</name>
+        <id>SummatorPlugin</id>
+        <name>SummatorPlugin</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
         <depends>com.intellij.modules.platform</depends>
@@ -143,11 +143,11 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/ForSmokeTest/lib/ForSmokeTest.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/default/ForSmokeTest.jar" />
+    <jar destfile="${build.layout}/plugins/summator/lib/summator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/summator.jar" />
     </jar>
-    <mkdir dir="${build.layout}/plugins/ForSmokeTest/languages" />
-    <mkdir dir="${build.layout}/plugins/ForSmokeTest/languages/ForSmokeTest" />
+    <mkdir dir="${build.layout}/plugins/summator/languages" />
+    <mkdir dir="${build.layout}/plugins/summator/languages/SummatorGroup" />
     <mkdir dir="${build.tmp}/default/mps.masha.summator.jar" />
     <mkdir dir="${build.tmp}/default/mps.masha.summator.jar/META-INF" />
     <echoxml file="${build.tmp}/default/mps.masha.summator.jar/META-INF/module.xml">
@@ -207,7 +207,7 @@
         <sources jar="mps.masha.summator-src.jar" descriptor="mps.masha.summator.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/ForSmokeTest/languages/ForSmokeTest/mps.masha.summator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/mps.masha.summator" />
       <fileset dir="${basedir}/languages/mps.masha.summator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/mps.masha.summator.jar" />
@@ -253,7 +253,7 @@
         <sources jar="mps.masha.summator-src.jar" descriptor="mps.masha.summator.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/ForSmokeTest/languages/ForSmokeTest/mps.masha.summator-generator.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263" />
       <fileset dir="${basedir}/languages/mps.masha.summator/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/mps.masha.summator-generator.jar" />
@@ -264,7 +264,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.summator-generator-template">
       <fileset dir="${basedir}/languages/mps.masha.summator/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/ForSmokeTest/languages/ForSmokeTest/mps.masha.summator-src.jar" duplicate="preserve">
+    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/mps.masha.summator/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />

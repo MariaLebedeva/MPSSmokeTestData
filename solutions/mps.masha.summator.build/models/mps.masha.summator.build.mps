@@ -79,7 +79,9 @@
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
       <concept id="7389400916848036984" name="jetbrains.mps.build.structure.BuildLayout_Folder" flags="ng" index="398223" />
-      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT" />
+      <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
+        <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
       <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
         <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
@@ -503,10 +505,10 @@
       </node>
     </node>
     <node concept="m$_wf" id="6UB_WUPRKT5" role="3989C9">
-      <property role="m$_wk" value="ForSmokeTest" />
+      <property role="m$_wk" value="SummatorPlugin" />
       <node concept="3_J27D" id="6UB_WUPRKT6" role="m$_yQ">
         <node concept="3Mxwew" id="6UB_WUPRKT7" role="3MwsjC">
-          <property role="3MwjfP" value="ForSmokeTest" />
+          <property role="3MwjfP" value="SummatorPlugin" />
         </node>
       </node>
       <node concept="3_J27D" id="6UB_WUPRKT8" role="m$_w8">
@@ -515,14 +517,14 @@
         </node>
       </node>
       <node concept="m$f5U" id="6UB_WUPRKTa" role="m$_yh">
-        <ref role="m$f5T" node="6UB_WUPRKT4" resolve="ForSmokeTest" />
+        <ref role="m$f5T" node="6UB_WUPRKT4" resolve="SummatorGroup" />
       </node>
       <node concept="m$_yC" id="6UB_WUPRKTb" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
       </node>
       <node concept="3_J27D" id="6UB_WUPRKTc" role="m_cZH">
         <node concept="3Mxwew" id="6UB_WUPRKTd" role="3MwsjC">
-          <property role="3MwjfP" value="ForSmokeTest" />
+          <property role="3MwjfP" value="summator" />
         </node>
       </node>
       <node concept="2pNNFK" id="6UB_WUPRKTe" role="20twgj">
@@ -533,7 +535,7 @@
       </node>
     </node>
     <node concept="2G$12M" id="6UB_WUPRKT4" role="3989C9">
-      <property role="TrG5h" value="ForSmokeTest" />
+      <property role="TrG5h" value="SummatorGroup" />
       <node concept="1E1JtD" id="6UB_WUPRKT3" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="mps.masha.summator" />
@@ -678,11 +680,17 @@
                   <node concept="2Ry0Ak" id="6UB_WUPRKUP" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKUQ" role="2Ry0An">
-                      <property role="2Ry0Am" value="summator" />
+                      <property role="2Ry0Am" value="mps" />
                       <node concept="2Ry0Ak" id="6UB_WUPRKUR" role="2Ry0An">
-                        <property role="2Ry0Am" value="build" />
-                        <node concept="2Ry0Ak" id="6UB_WUPTc_N" role="2Ry0An">
-                          <property role="2Ry0Am" value="summator.vmoptions" />
+                        <property role="2Ry0Am" value="masha" />
+                        <node concept="2Ry0Ak" id="1qoDzFNvhMT" role="2Ry0An">
+                          <property role="2Ry0Am" value="summator" />
+                          <node concept="2Ry0Ak" id="1qoDzFNvhMX" role="2Ry0An">
+                            <property role="2Ry0Am" value="build" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvhN2" role="2Ry0An">
+                              <property role="2Ry0Am" value="summator.vmoptions" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -704,11 +712,17 @@
                   <node concept="2Ry0Ak" id="6UB_WUPRKUV" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKUW" role="2Ry0An">
-                      <property role="2Ry0Am" value="summator" />
+                      <property role="2Ry0Am" value="mps" />
                       <node concept="2Ry0Ak" id="6UB_WUPRKUX" role="2Ry0An">
-                        <property role="2Ry0Am" value="build" />
-                        <node concept="2Ry0Ak" id="6UB_WUPTc_P" role="2Ry0An">
-                          <property role="2Ry0Am" value="summator64.vmoptions" />
+                        <property role="2Ry0Am" value="masha" />
+                        <node concept="2Ry0Ak" id="1qoDzFNvhTB" role="2Ry0An">
+                          <property role="2Ry0Am" value="summator" />
+                          <node concept="2Ry0Ak" id="1qoDzFNvhTG" role="2Ry0An">
+                            <property role="2Ry0Am" value="build" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvhTH" role="2Ry0An">
+                              <property role="2Ry0Am" value="summator64.vmoptions" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -734,11 +748,17 @@
                   <node concept="2Ry0Ak" id="6UB_WUPRKV1" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKV2" role="2Ry0An">
-                      <property role="2Ry0Am" value="summator" />
-                      <node concept="2Ry0Ak" id="6UB_WUPRKV3" role="2Ry0An">
-                        <property role="2Ry0Am" value="build" />
-                        <node concept="2Ry0Ak" id="6UB_WUPTc_R" role="2Ry0An">
-                          <property role="2Ry0Am" value="summator.sh" />
+                      <property role="2Ry0Am" value="mps" />
+                      <node concept="2Ry0Ak" id="1qoDzFNvhTL" role="2Ry0An">
+                        <property role="2Ry0Am" value="masha" />
+                        <node concept="2Ry0Ak" id="1qoDzFNvhTS" role="2Ry0An">
+                          <property role="2Ry0Am" value="summator" />
+                          <node concept="2Ry0Ak" id="1qoDzFNvhTT" role="2Ry0An">
+                            <property role="2Ry0Am" value="build" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvhTU" role="2Ry0An">
+                              <property role="2Ry0Am" value="summator.sh" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -750,7 +770,7 @@
         </node>
         <node concept="3_J27D" id="6UB_WUPRKVE" role="Nbhlr">
           <node concept="3Mxwew" id="6UB_WUPRKVF" role="3MwsjC">
-            <property role="3MwjfP" value="ForSmokeTest" />
+            <property role="3MwjfP" value="summator" />
           </node>
           <node concept="3Mxwew" id="6UB_WUPRKVG" role="3MwsjC">
             <property role="3MwjfP" value="-" />
@@ -781,7 +801,7 @@
               <property role="2$htvj" value="*" />
               <node concept="NbPM2" id="6UB_WUPRKW3" role="2$htvi">
                 <node concept="3Mxwew" id="6UB_WUPRKW4" role="3MwsjC">
-                  <property role="3MwjfP" value="forsmoketest.exe.vmoptions" />
+                  <property role="3MwjfP" value="summator.exe.vmoptions" />
                 </node>
               </node>
             </node>
@@ -796,11 +816,17 @@
                   <node concept="2Ry0Ak" id="6UB_WUPRKW9" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKWa" role="2Ry0An">
-                      <property role="2Ry0Am" value="summator" />
+                      <property role="2Ry0Am" value="mps" />
                       <node concept="2Ry0Ak" id="6UB_WUPRKWb" role="2Ry0An">
-                        <property role="2Ry0Am" value="build" />
-                        <node concept="2Ry0Ak" id="6UB_WUPTc_T" role="2Ry0An">
-                          <property role="2Ry0Am" value="summator.vmoptions" />
+                        <property role="2Ry0Am" value="masha" />
+                        <node concept="2Ry0Ak" id="1qoDzFNvhTZ" role="2Ry0An">
+                          <property role="2Ry0Am" value="summator" />
+                          <node concept="2Ry0Ak" id="1qoDzFNvhU4" role="2Ry0An">
+                            <property role="2Ry0Am" value="build" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvhU5" role="2Ry0An">
+                              <property role="2Ry0Am" value="summator.vmoptions" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -814,7 +840,7 @@
               <property role="2$htvj" value="*" />
               <node concept="NbPM2" id="6UB_WUPRKWf" role="2$htvi">
                 <node concept="3Mxwew" id="6UB_WUPRKWg" role="3MwsjC">
-                  <property role="3MwjfP" value="forsmoketest64.exe.vmoptions" />
+                  <property role="3MwjfP" value="summatort64.exe.vmoptions" />
                 </node>
               </node>
             </node>
@@ -829,11 +855,17 @@
                   <node concept="2Ry0Ak" id="6UB_WUPRKWl" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKWm" role="2Ry0An">
-                      <property role="2Ry0Am" value="summator" />
-                      <node concept="2Ry0Ak" id="6UB_WUPRKWn" role="2Ry0An">
-                        <property role="2Ry0Am" value="build" />
-                        <node concept="2Ry0Ak" id="6UB_WUPTc_V" role="2Ry0An">
-                          <property role="2Ry0Am" value="summator64.vmoptions" />
+                      <property role="2Ry0Am" value="mps" />
+                      <node concept="2Ry0Ak" id="1qoDzFNvhU9" role="2Ry0An">
+                        <property role="2Ry0Am" value="masha" />
+                        <node concept="2Ry0Ak" id="1qoDzFNvhUa" role="2Ry0An">
+                          <property role="2Ry0Am" value="summator" />
+                          <node concept="2Ry0Ak" id="1qoDzFNvhUf" role="2Ry0An">
+                            <property role="2Ry0Am" value="build" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvhUk" role="2Ry0An">
+                              <property role="2Ry0Am" value="summator64.vmoptions" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -901,11 +933,17 @@
                   <node concept="2Ry0Ak" id="6UB_WUPRKV7" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKV8" role="2Ry0An">
-                      <property role="2Ry0Am" value="summator" />
-                      <node concept="2Ry0Ak" id="6UB_WUPRKV9" role="2Ry0An">
-                        <property role="2Ry0Am" value="build" />
-                        <node concept="2Ry0Ak" id="6UB_WUPTc_X" role="2Ry0An">
-                          <property role="2Ry0Am" value="summator.bat" />
+                      <property role="2Ry0Am" value="mps" />
+                      <node concept="2Ry0Ak" id="1qoDzFNvhUn" role="2Ry0An">
+                        <property role="2Ry0Am" value="masha" />
+                        <node concept="2Ry0Ak" id="1qoDzFNvhUu" role="2Ry0An">
+                          <property role="2Ry0Am" value="summator" />
+                          <node concept="2Ry0Ak" id="1qoDzFNvhUv" role="2Ry0An">
+                            <property role="2Ry0Am" value="build" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvhUw" role="2Ry0An">
+                              <property role="2Ry0Am" value="summator.bat" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -917,7 +955,7 @@
         </node>
         <node concept="3_J27D" id="6UB_WUPRKWA" role="Nbhlr">
           <node concept="3Mxwew" id="6UB_WUPRKWB" role="3MwsjC">
-            <property role="3MwjfP" value="ForSmokeTest" />
+            <property role="3MwjfP" value="summator" />
           </node>
           <node concept="3Mxwew" id="6UB_WUPRKWC" role="3MwsjC">
             <property role="3MwjfP" value="-" />
@@ -933,7 +971,7 @@
       <node concept="3981dG" id="6UB_WUPRKXl" role="39821P">
         <node concept="3_J27D" id="6UB_WUPRKXm" role="Nbhlr">
           <node concept="3Mxwew" id="6UB_WUPRKXn" role="3MwsjC">
-            <property role="3MwjfP" value="ForSmokeTest" />
+            <property role="3MwjfP" value="summator" />
           </node>
           <node concept="3Mxwew" id="6UB_WUPRKXo" role="3MwsjC">
             <property role="3MwjfP" value="-" />
@@ -1013,7 +1051,7 @@
                   <property role="2$htvj" value="*" />
                   <node concept="NbPM2" id="6UB_WUPRKXD" role="2$htvi">
                     <node concept="3Mxwew" id="6UB_WUPRKXE" role="3MwsjC">
-                      <property role="3MwjfP" value="forsmoketest" />
+                      <property role="3MwjfP" value="summator" />
                     </node>
                   </node>
                 </node>
@@ -1036,11 +1074,17 @@
                     <node concept="2Ry0Ak" id="6UB_WUPRKVd" role="2Ry0An">
                       <property role="2Ry0Am" value="source_gen" />
                       <node concept="2Ry0Ak" id="6UB_WUPRKVe" role="2Ry0An">
-                        <property role="2Ry0Am" value="summator" />
+                        <property role="2Ry0Am" value="mps" />
                         <node concept="2Ry0Ak" id="6UB_WUPRKVf" role="2Ry0An">
-                          <property role="2Ry0Am" value="build" />
-                          <node concept="2Ry0Ak" id="6UB_WUPRKVg" role="2Ry0An">
-                            <property role="2Ry0Am" value="Info.plist.xml" />
+                          <property role="2Ry0Am" value="masha" />
+                          <node concept="2Ry0Ak" id="1qoDzFNvbTK" role="2Ry0An">
+                            <property role="2Ry0Am" value="summator" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvbTP" role="2Ry0An">
+                              <property role="2Ry0Am" value="build" />
+                              <node concept="2Ry0Ak" id="1qoDzFNvbTU" role="2Ry0An">
+                                <property role="2Ry0Am" value="Info.plist.xml" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1165,11 +1209,17 @@
                       <node concept="2Ry0Ak" id="6UB_WUPRKYh" role="2Ry0An">
                         <property role="2Ry0Am" value="source_gen" />
                         <node concept="2Ry0Ak" id="6UB_WUPRKYi" role="2Ry0An">
-                          <property role="2Ry0Am" value="summator" />
+                          <property role="2Ry0Am" value="mps" />
                           <node concept="2Ry0Ak" id="6UB_WUPRKYj" role="2Ry0An">
-                            <property role="2Ry0Am" value="build" />
-                            <node concept="2Ry0Ak" id="6UB_WUPTc_Z" role="2Ry0An">
-                              <property role="2Ry0Am" value="summator64.vmoptions" />
+                            <property role="2Ry0Am" value="masha" />
+                            <node concept="2Ry0Ak" id="1qoDzFNvbTW" role="2Ry0An">
+                              <property role="2Ry0Am" value="summator" />
+                              <node concept="2Ry0Ak" id="1qoDzFNvbU1" role="2Ry0An">
+                                <property role="2Ry0Am" value="build" />
+                                <node concept="2Ry0Ak" id="1qoDzFNvbU6" role="2Ry0An">
+                                  <property role="2Ry0Am" value="summator64.vmoptions" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -1178,15 +1228,15 @@
                   </node>
                 </node>
                 <node concept="2$htT0" id="6UB_WUPRKYl" role="28jJR8">
-                  <property role="2$htTZ" value="forsmoketest64.vmoptions" />
-                  <property role="2$htTY" value="forsmoketest.vmoptions" />
+                  <property role="2$htTZ" value="summator64.vmoptions" />
+                  <property role="2$htTY" value="summator.vmoptions" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="3_J27D" id="6UB_WUPRKYm" role="Nbhlr">
             <node concept="3Mxwew" id="6UB_WUPRKYn" role="3MwsjC">
-              <property role="3MwjfP" value="ForSmokeTest " />
+              <property role="3MwjfP" value="summator " />
             </node>
             <node concept="3Mxwey" id="6UB_WUPRKYo" role="3MwsjC">
               <ref role="3Mxwex" node="6UB_WUPRKUA" resolve="version" />
@@ -1200,6 +1250,20 @@
     </node>
     <node concept="398rNT" id="6UB_WUPRKU_" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="1qoDzFNv65L" role="398pKh">
+        <node concept="2Ry0Ak" id="1qoDzFNv677" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="1qoDzFNv67c" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="1qoDzFNv67h" role="2Ry0An">
+              <property role="2Ry0Am" value="Downloads" />
+              <node concept="2Ry0Ak" id="1qoDzFNv67m" role="2Ry0An">
+                <property role="2Ry0Am" value="MPS 2021.3" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2kB4xC" id="6UB_WUPRKUA" role="1l3spd">
       <property role="TrG5h" value="version" />
