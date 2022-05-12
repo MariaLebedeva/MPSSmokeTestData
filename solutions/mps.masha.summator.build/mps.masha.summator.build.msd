@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="summator.build" uuid="1144c401-ffce-4d8b-8d56-c8307a653b25" moduleVersion="0" compileInMPS="true">
+<solution name="mps.masha.summator.build" uuid="1144c401-ffce-4d8b-8d56-c8307a653b25" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -22,7 +22,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
-    <module reference="1144c401-ffce-4d8b-8d56-c8307a653b25(summator.build)" version="0" />
+    <module reference="1144c401-ffce-4d8b-8d56-c8307a653b25(mps.masha.summator.build)" version="0" />
   </dependencyVersions>
 </solution>
 

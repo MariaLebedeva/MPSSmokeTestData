@@ -20,20 +20,20 @@
     <mkdir dir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.tar.gz" />
     <mkdir dir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.tar.gz/bin" />
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/summator.vmoptions" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/summator.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/summator64.vmoptions" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/summator64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
     <mkdir dir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.tar.gz_f755" />
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.tar.gz_f755">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/summator.sh" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/summator.sh" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -47,14 +47,14 @@
     <mkdir dir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.win.zip" />
     <mkdir dir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.win.zip/bin" />
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/summator.vmoptions" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/summator.vmoptions" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
       <globmapper from="*" to="forsmoketest.exe.vmoptions" />
     </copy>
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/summator64.vmoptions" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/summator64.vmoptions" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
@@ -62,7 +62,7 @@
     </copy>
     <mkdir dir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.win.zip_f755" />
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.win.zip_f755">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/summator.bat" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/summator.bat" />
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
@@ -89,7 +89,7 @@
       <globmapper from="*" to="forsmoketest" />
     </copy>
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.macos.zip/ForSmokeTest ${version}.app/Contents">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/Info.plist.xml" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/Info.plist.xml" />
       <filterchain>
         <tokenfilter>
           <replaceregex pattern="\$version\$" replace="${version}" flags="" />
@@ -112,7 +112,7 @@
       </filterchain>
     </copy>
     <copy todir="${build.tmp}/default/ForSmokeTest-_dl__lbrace_build.number_rbrace_.macos.zip/ForSmokeTest ${version}.app/Contents/bin">
-      <fileset file="${basedir}/solutions/summator.build/source_gen/summator/build/summator64.vmoptions" />
+      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/summator/build/summator64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>

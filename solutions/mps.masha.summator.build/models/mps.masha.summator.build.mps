@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f7adabce-f245-466b-beae-1f08793dcd8f(summator.build)">
+<model ref="r:f7adabce-f245-466b-beae-1f08793dcd8f(mps.masha.summator.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -674,7 +674,7 @@
               <node concept="2Ry0Ak" id="6UB_WUPRKUN" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6UB_WUPRKUO" role="2Ry0An">
-                  <property role="2Ry0Am" value="summator.build" />
+                  <property role="2Ry0Am" value="mps.masha.summator.build" />
                   <node concept="2Ry0Ak" id="6UB_WUPRKUP" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKUQ" role="2Ry0An">
@@ -700,7 +700,7 @@
               <node concept="2Ry0Ak" id="6UB_WUPRKUT" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6UB_WUPRKUU" role="2Ry0An">
-                  <property role="2Ry0Am" value="summator.build" />
+                  <property role="2Ry0Am" value="mps.masha.summator.build" />
                   <node concept="2Ry0Ak" id="6UB_WUPRKUV" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKUW" role="2Ry0An">
@@ -730,7 +730,7 @@
               <node concept="2Ry0Ak" id="6UB_WUPRKUZ" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6UB_WUPRKV0" role="2Ry0An">
-                  <property role="2Ry0Am" value="summator.build" />
+                  <property role="2Ry0Am" value="mps.masha.summator.build" />
                   <node concept="2Ry0Ak" id="6UB_WUPRKV1" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKV2" role="2Ry0An">
@@ -792,7 +792,7 @@
               <node concept="2Ry0Ak" id="6UB_WUPRKW7" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6UB_WUPRKW8" role="2Ry0An">
-                  <property role="2Ry0Am" value="summator.build" />
+                  <property role="2Ry0Am" value="mps.masha.summator.build" />
                   <node concept="2Ry0Ak" id="6UB_WUPRKW9" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKWa" role="2Ry0An">
@@ -825,7 +825,7 @@
               <node concept="2Ry0Ak" id="6UB_WUPRKWj" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6UB_WUPRKWk" role="2Ry0An">
-                  <property role="2Ry0Am" value="summator.build" />
+                  <property role="2Ry0Am" value="mps.masha.summator.build" />
                   <node concept="2Ry0Ak" id="6UB_WUPRKWl" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKWm" role="2Ry0An">
@@ -897,7 +897,7 @@
               <node concept="2Ry0Ak" id="6UB_WUPRKV5" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="6UB_WUPRKV6" role="2Ry0An">
-                  <property role="2Ry0Am" value="summator.build" />
+                  <property role="2Ry0Am" value="mps.masha.summator.build" />
                   <node concept="2Ry0Ak" id="6UB_WUPRKV7" role="2Ry0An">
                     <property role="2Ry0Am" value="source_gen" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKV8" role="2Ry0An">
@@ -1032,7 +1032,7 @@
                 <node concept="2Ry0Ak" id="6UB_WUPRKVb" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
                   <node concept="2Ry0Ak" id="6UB_WUPRKVc" role="2Ry0An">
-                    <property role="2Ry0Am" value="summator.build" />
+                    <property role="2Ry0Am" value="mps.masha.summator.build" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKVd" role="2Ry0An">
                       <property role="2Ry0Am" value="source_gen" />
                       <node concept="2Ry0Ak" id="6UB_WUPRKVe" role="2Ry0An">
@@ -1161,7 +1161,7 @@
                   <node concept="2Ry0Ak" id="6UB_WUPRKYf" role="iGT6I">
                     <property role="2Ry0Am" value="solutions" />
                     <node concept="2Ry0Ak" id="6UB_WUPRKYg" role="2Ry0An">
-                      <property role="2Ry0Am" value="summator.build" />
+                      <property role="2Ry0Am" value="mps.masha.summator.build" />
                       <node concept="2Ry0Ak" id="6UB_WUPRKYh" role="2Ry0An">
                         <property role="2Ry0Am" value="source_gen" />
                         <node concept="2Ry0Ak" id="6UB_WUPRKYi" role="2Ry0An">
