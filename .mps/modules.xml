@@ -19,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/TestModes/TestModes.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestRunDebug/TestRunDebug.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/masha.genplan/masha.genplan.msd" folder="generation plan sample" />
+      <modulePath path="$PROJECT_DIR$/solutions/summator.build/summator.build.msd" folder="sum of numbers" />
     </projectModules>
   </component>
 </project>
