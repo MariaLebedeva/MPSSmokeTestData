@@ -326,15 +326,15 @@
     <node concept="2kB4xC" id="6UB_WUPRKSj" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="6UB_WUPRKSk" role="aVJcv">
-        <property role="hHN3Y" value="yyyyMMdd" />
+        <property role="hHN3Y" value="20220512" />
       </node>
     </node>
     <node concept="2kB4xC" id="6UB_WUPRKSl" role="1l3spd">
       <property role="TrG5h" value="build.number" />
       <node concept="aVJcg" id="6UB_WUPRKSm" role="aVJcv">
         <node concept="NbPM2" id="6UB_WUPRKSn" role="aVJcq">
-          <node concept="3Mxwew" id="6UB_WUPRKSo" role="3MwsjC">
-            <property role="3MwjfP" value="213.SNAPSHOT" />
+          <node concept="3Mxwew" id="5UIULx8SSgo" role="3MwsjC">
+            <property role="3MwjfP" value="213.1" />
           </node>
         </node>
       </node>
