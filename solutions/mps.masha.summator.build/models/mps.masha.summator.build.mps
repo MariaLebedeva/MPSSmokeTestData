@@ -1299,7 +1299,7 @@
   </node>
   <node concept="26EafH" id="6UB_WUPRKYq">
     <property role="26FY9R" value="jetbrains.mps.Launcher" />
-    <property role="TrG5h" value="summator.build" />
+    <property role="TrG5h" value="summator.build.startupscript" />
     <ref role="1_kbm$" node="6UB_WUPRKSy" resolve="ForSmokeTest 1.0" />
     <node concept="26Ea6D" id="6UB_WUPRKYr" role="26FZ21">
       <property role="26Ea6C" value="Common IntelliJ Platform options:" />
