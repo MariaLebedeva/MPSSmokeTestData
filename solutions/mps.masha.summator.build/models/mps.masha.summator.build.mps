@@ -222,6 +222,7 @@
         <child id="62678610895108195" name="svg_small" index="1hH5mY" />
         <child id="62678610895108142" name="svg" index="1hH5nN" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
+        <child id="4157435862321767641" name="version" index="3ZAC$U" />
       </concept>
       <concept id="4278635856200817744" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleModelRoot" flags="ng" index="1BupzO">
         <property id="8137134783396907368" name="convert2binary" index="1Hdu6h" />
@@ -242,6 +243,12 @@
       </concept>
       <concept id="7259033139236285166" name="jetbrains.mps.build.mps.structure.BuildMps_ExtractedModuleDependency" flags="nn" index="1SiIV0">
         <child id="7259033139236285167" name="dependency" index="1SiIV1" />
+      </concept>
+      <concept id="4157435862321765764" name="jetbrains.mps.build.mps.structure.BuildMps_BrandingVersion" flags="ng" index="3ZAF1B">
+        <child id="4157435862321765794" name="versionEap" index="3ZAF11" />
+        <child id="4157435862321765793" name="versionBugfixNr" index="3ZAF12" />
+        <child id="4157435862321765792" name="versionMinor" index="3ZAF13" />
+        <child id="4157435862321765791" name="versionMajor" index="3ZAF1W" />
       </concept>
     </language>
   </registry>
@@ -321,6 +328,20 @@
             <property role="2Ry0Am" value="summator_16.svg" />
           </node>
         </node>
+      </node>
+      <node concept="3ZAF1B" id="1ndxf2q0kZP" role="3ZAC$U">
+        <node concept="3_J27D" id="1ndxf2q0kZQ" role="3ZAF1W">
+          <node concept="3Mxwey" id="1ndxf2q0BDf" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:3AMbuf1a7Ob" resolve="version.major" />
+          </node>
+        </node>
+        <node concept="3_J27D" id="1ndxf2q0kZS" role="3ZAF13">
+          <node concept="3Mxwey" id="1ndxf2q0BDh" role="3MwsjC">
+            <ref role="3Mxwex" to="ffeo:3AMbuf1a7Of" resolve="version.minor" />
+          </node>
+        </node>
+        <node concept="NbPM2" id="1ndxf2q0kZU" role="3ZAF12" />
+        <node concept="NbPM2" id="1ndxf2q0kZV" role="3ZAF11" />
       </node>
     </node>
     <node concept="2kB4xC" id="6UB_WUPRKSj" role="1l3spd">

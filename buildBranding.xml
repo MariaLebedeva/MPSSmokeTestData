@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/summator.build.branding" />
   <property name="build.layout" location="${build.dir}/artifacts/summator.build.branding" />
   <tstamp>
-    <format property="date" pattern="yyyyMMdd" />
+    <format property="date" pattern="20220512" />
   </tstamp>
   <property name="build.number" value="213.1" />
   <property name="mps_home" location="" />
@@ -74,7 +74,7 @@
     <mkdir dir="${build.tmp}/default/branding.jar/idea" />
     <echoxml file="${build.tmp}/default/branding.jar/idea/IdeaApplicationInfo.xml">
       <component>
-        <version major="1" minor="0" eap="false" />
+        <version major="${mpsBootstrapCore.version.major}" minor="${mpsBootstrapCore.version.minor}" eap="false" />
         <build number="${build.number}" date="${date}" />
         <logo url="/splash.png" textcolor="FFFFFF" progressColor="FFFFFF" />
         <icon svg="/summator.svg" svg-small="/summator_16.svg" />
