@@ -387,6 +387,15 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="4ai5quvd9rA" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5D1dJ7xWer5" resolve="mpsCore" />
+      <node concept="398BVA" id="4ai5quvd9rL" role="2JcizS">
+        <ref role="398BVh" node="6UB_WUPRKSp" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="4ai5quvd9rO" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
+    </node>
     <node concept="3jsGME" id="6UB_WUPRKTg" role="3989C9">
       <property role="TrG5h" value="mps-tips" />
       <node concept="3jmSaf" id="6UB_WUPRKTh" role="3jmSa1" />
