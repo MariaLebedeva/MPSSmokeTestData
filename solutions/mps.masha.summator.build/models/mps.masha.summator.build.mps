@@ -364,13 +364,13 @@
       <property role="TrG5h" value="mps_home" />
     </node>
     <node concept="2sgV4H" id="6UB_WUPRKSq" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:1diLdO26mQ6" />
+      <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
       <node concept="398BVA" id="6UB_WUPRKSr" role="2JcizS">
         <ref role="398BVh" node="6UB_WUPRKSp" resolve="mps_home" />
       </node>
     </node>
     <node concept="2sgV4H" id="6UB_WUPRKSs" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:5rNMDvYzelV" />
+      <ref role="1l3spb" to="ffeo:5rNMDvYzelV" resolve="mpsMakePlugin" />
       <node concept="398BVA" id="6UB_WUPRKSt" role="2JcizS">
         <ref role="398BVh" node="6UB_WUPRKSp" resolve="mps_home" />
         <node concept="2Ry0Ak" id="6UB_WUPRKSu" role="iGT6I">
@@ -379,7 +379,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="6UB_WUPRKSv" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:1lMM4owFq4Y" />
+      <ref role="1l3spb" to="ffeo:1lMM4owFq4Y" resolve="mpsVcs" />
       <node concept="398BVA" id="6UB_WUPRKSw" role="2JcizS">
         <ref role="398BVh" node="6UB_WUPRKSp" resolve="mps_home" />
         <node concept="2Ry0Ak" id="6UB_WUPRKSx" role="iGT6I">
@@ -402,10 +402,10 @@
     </node>
     <node concept="1l3spV" id="6UB_WUPRKTi" role="1l3spN">
       <node concept="3_I8Xc" id="6UB_WUPRKTq" role="39821P">
-        <ref role="3_I8Xa" to="ffeo:1diLdO26H79" />
+        <ref role="3_I8Xa" to="ffeo:1diLdO26H79" resolve="languages" />
       </node>
       <node concept="3_I8Xc" id="6UB_WUPRKTr" role="39821P">
-        <ref role="3_I8Xa" to="ffeo:1aRUp2KiMC$" />
+        <ref role="3_I8Xa" to="ffeo:1aRUp2KiMC$" resolve="license" />
       </node>
       <node concept="3_I8Xc" id="6UB_WUPRKTs" role="39821P">
         <ref role="3_I8Xa" to="ffeo:5HYJdC4wsjv" />
@@ -417,7 +417,7 @@
           </node>
         </node>
         <node concept="3ygNvl" id="6UB_WUPRKTw" role="39821P">
-          <ref role="3ygNvj" to="ffeo:3cxBkkDa4_O" />
+          <ref role="3ygNvj" to="ffeo:3cxBkkDa4_O" resolve="bin" />
           <node concept="3LWZYx" id="6UB_WUPRKTx" role="1juEy9">
             <property role="3LWZYw" value="log.xml" />
           </node>
@@ -453,7 +453,7 @@
           </node>
         </node>
         <node concept="3ygNvl" id="6UB_WUPRKTE" role="39821P">
-          <ref role="3ygNvj" to="ffeo:1diLdO26H7f" />
+          <ref role="3ygNvj" to="ffeo:1diLdO26H7f" resolve="lib" />
           <node concept="3LWZYq" id="6UB_WUPRKTF" role="1juEy9">
             <property role="3LWZYl" value="MPS-src.zip" />
           </node>
@@ -475,25 +475,25 @@
             </node>
           </node>
           <node concept="1zDrgl" id="6UB_WUPRKTM" role="39821P">
-            <ref role="1zDrgn" node="6UB_WUPRKSy" resolve="ForSmokeTest 1.0" />
+            <ref role="1zDrgn" node="6UB_WUPRKSy" resolve="summator ${version.major}.${version.minor}" />
           </node>
         </node>
       </node>
       <node concept="398223" id="6UB_WUPRKTN" role="39821P">
         <node concept="3_I8Xc" id="6UB_WUPRKTO" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" />
+          <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="svn4idea" />
         </node>
         <node concept="3_I8Xc" id="6UB_WUPRKTP" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" />
+          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
         </node>
         <node concept="3_I8Xc" id="6UB_WUPRKTQ" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" />
+          <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" resolve="mps-core" />
         </node>
         <node concept="3_I8Xc" id="6UB_WUPRKTR" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" />
+          <ref role="3_I8Xa" to="ffeo:1x6h9EwqP32" resolve="mps-make" />
         </node>
         <node concept="m$_wl" id="6UB_WUPRKTS" role="39821P">
-          <ref role="m_rDy" node="6UB_WUPRKT5" resolve="ForSmokeTest" />
+          <ref role="m_rDy" node="6UB_WUPRKT5" resolve="SummatorPlugin" />
           <node concept="pUk6x" id="6UB_WUPRKTT" role="pUk7w" />
         </node>
         <node concept="3_J27D" id="6UB_WUPRKTU" role="Nbhlr">
@@ -550,7 +550,7 @@
         <ref role="m$f5T" node="6UB_WUPRKT4" resolve="SummatorGroup" />
       </node>
       <node concept="m$_yC" id="6UB_WUPRKTb" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="3_J27D" id="6UB_WUPRKTc" role="m_cZH">
         <node concept="3Mxwew" id="6UB_WUPRKTd" role="3MwsjC">
@@ -1309,7 +1309,7 @@
   <node concept="26EafH" id="6UB_WUPRKYq">
     <property role="26FY9R" value="jetbrains.mps.Launcher" />
     <property role="TrG5h" value="summator.build.startupscript" />
-    <ref role="1_kbm$" node="6UB_WUPRKSy" resolve="ForSmokeTest 1.0" />
+    <ref role="1_kbm$" node="6UB_WUPRKSy" resolve="summator ${version.major}.${version.minor}" />
     <node concept="26Ea6D" id="6UB_WUPRKYr" role="26FZ21">
       <property role="26Ea6C" value="Common IntelliJ Platform options:" />
       <property role="2eq24a" value="true" />
