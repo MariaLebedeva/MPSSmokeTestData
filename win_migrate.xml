@@ -1,7 +1,7 @@
 <project name="projectMigration" default="migrate" basedir=".">
     <property name="env.JAVA_HOME" value="${java.home}/.."/>
     <property name="jdk.home" value="${env.JAVA_HOME}"/>
-    <property name="mps.home" location="C:\Program Files\JetBrains\MPS 2021.3"/>
+    <property name="mps.home" location="C:\Program Files\JetBrains\MPS 2022.3"/>
     <property name="artifacts.mps" location="${mps.home}"/>
     <path id="path.mps.ant.path">
         <pathelement location="${mps.home}/lib/ant/lib/ant-mps.jar"/>
