@@ -12,7 +12,7 @@
     </path>
     <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path"/>
     <target name="migrate">
-        <migrate project="${basedir}">
+        <migrate project="${basedir}" autoPluginDiscovery="true">
             <macro name="mps_home" path="${mps.home}"/>
             <jvmargs>
                 <arg value="-ea" />
