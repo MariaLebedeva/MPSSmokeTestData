@@ -481,10 +481,10 @@
       </node>
       <node concept="398223" id="6UB_WUPRKTN" role="39821P">
         <node concept="3_I8Xc" id="6UB_WUPRKTO" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="svn4idea" />
+          <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="vcs-svn" />
         </node>
         <node concept="3_I8Xc" id="6UB_WUPRKTP" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
+          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
         </node>
         <node concept="3_I8Xc" id="6UB_WUPRKTQ" role="39821P">
           <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" resolve="mps-core" />

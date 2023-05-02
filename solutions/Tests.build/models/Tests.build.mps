@@ -152,7 +152,7 @@
       <node concept="55IIr" id="79CuWLw55qY" role="398pKh" />
     </node>
     <node concept="2sgV4H" id="79CuWLw55g4" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="79CuWLw55g5" role="2JcizS">
         <ref role="398BVh" node="79CuWLw55g3" resolve="mps_home" />
       </node>
@@ -186,7 +186,7 @@
         <ref role="m$f5T" node="79CuWLw55gg" resolve="ForSmokeTest" />
       </node>
       <node concept="m$_yC" id="79CuWLw55gn" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="3_J27D" id="79CuWLw55go" role="m_cZH">
         <node concept="3Mxwew" id="79CuWLw55gp" role="3MwsjC">
