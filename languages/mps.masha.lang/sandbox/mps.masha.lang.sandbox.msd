@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="mps.masha.lang.sandbox" uuid="fd17ae14-a9a5-44e6-8854-2ac8ceb2a7a5" moduleVersion="0" compileInMPS="true">
+<solution name="mps.masha.lang.sandbox" uuid="fd17ae14-a9a5-44e6-8854-2ac8ceb2a7a5" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">b46c1fe6-eb41-4a07-9b22-217500a80071(masha.genplan)</dependency>

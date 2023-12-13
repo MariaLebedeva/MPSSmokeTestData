@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="TestModes" uuid="a5f3d010-e904-48ef-930c-39c915390caa" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="TestModes" uuid="a5f3d010-e904-48ef-930c-39c915390caa" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>

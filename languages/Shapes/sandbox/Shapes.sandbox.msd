@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Shapes.sandbox" uuid="ae27e40a-335c-4649-bab5-655cef467f80" moduleVersion="0" compileInMPS="true">
+<solution name="Shapes.sandbox" uuid="ae27e40a-335c-4649-bab5-655cef467f80" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>

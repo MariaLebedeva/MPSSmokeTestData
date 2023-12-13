@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="LanguageTests" uuid="1397f0f9-8b75-43dc-9f82-03d68618a302" moduleVersion="0" compileInMPS="true">
+<solution name="LanguageTests" uuid="1397f0f9-8b75-43dc-9f82-03d68618a302" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:5e52482c-06e4-41ac-8a97-2616ff2191a3:NewLanguage" version="0" />
     <language slang="l:9723eddf-e199-4aab-9da6-c65f6acb2f49:PCLang" version="0" />
