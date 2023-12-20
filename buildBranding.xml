@@ -233,7 +233,6 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/mps.masha.summator" />
-      <fileset dir="${basedir}/languages/mps.masha.summator" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/mps.masha.summator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/mps.masha.summator.jar" />
     </jar>
@@ -472,7 +471,7 @@
   <target name="java.compile.mps.masha.summator" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/mps.masha.summator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mps.masha.summator" />
-    <javac destdir="${build.tmp}/java/out/mps.masha.summator" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/mps.masha.summator" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/mps.masha.summator/source_gen" />
@@ -528,12 +527,17 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/mps.masha.summator">
+      <fileset dir="${basedir}/languages/mps.masha.summator/source_gen">
+        <include name="**/*.png" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="java.compile.mps.masha.summator#5685486302097484263" depends="java.compile.mps.masha.summator, fetchDependencies">
     <mkdir dir="${basedir}/languages/mps.masha.summator/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263" />
-    <javac destdir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/mps.masha.summator/generator/source_gen" />
@@ -585,6 +589,11 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263">
+      <fileset dir="${basedir}/languages/mps.masha.summator/generator/source_gen">
+        <include name="**/*.png" />
+      </fileset>
+    </copy>
   </target>
   
   <target name="cleanSources">

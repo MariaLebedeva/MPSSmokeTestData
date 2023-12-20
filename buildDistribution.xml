@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/summator.build.distribution" />
   <property name="build.layout" location="${build.dir}/artifacts/summator.build.distribution" />
-  <property name="mps_home" location="${basedir}/../../Downloads/MPS 2021.3" />
+  <property name="mps_home" location="${basedir}/../../Downloads/MPS 2023.2" />
   <property name="version" value="1.0" />
   <property name="artifacts.summator.build.branding" location="${build.dir}/artifacts/summator.build.branding" />
   <property file="${artifacts.summator.build.branding}/build.properties" prefix="import.summator.build.branding" />
@@ -17,69 +17,6 @@
   
   <target name="assemble" depends="fetchDependencies">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz" />
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz/bin" />
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/mps/masha/summator/build/summator.vmoptions" />
-      <filterchain>
-        <fixcrlf eol="lf" eof="remove" />
-      </filterchain>
-    </copy>
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz/bin">
-      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/mps/masha/summator/build/summator64.vmoptions" />
-      <filterchain>
-        <fixcrlf eol="lf" eof="remove" />
-      </filterchain>
-    </copy>
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz_f755" />
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz_f755">
-      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/mps/masha/summator/build/summator.sh" />
-      <filterchain>
-        <fixcrlf eol="lf" eof="remove" />
-      </filterchain>
-    </copy>
-    <tar destfile="${build.layout}/summator-${summator.build.branding.build.number}.tar.gz" compression="gzip" longfile="gnu">
-      <fileset dir="${artifacts.summator.build.branding}" />
-      <tarfileset dir="${mps_home}/bin/linux" prefix="bin" filemode="755" />
-      <tarfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz_f755" filemode="755" prefix="bin" />
-      <tarfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz" />
-    </tar>
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip" />
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip/bin" />
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/mps/masha/summator/build/summator.vmoptions" />
-      <filterchain>
-        <fixcrlf eol="crlf" />
-      </filterchain>
-      <globmapper from="*" to="summator.exe.vmoptions" />
-    </copy>
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip/bin">
-      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/mps/masha/summator/build/summator64.vmoptions" />
-      <filterchain>
-        <fixcrlf eol="crlf" />
-      </filterchain>
-      <globmapper from="*" to="summatort64.exe.vmoptions" />
-    </copy>
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip_f755" />
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip_f755">
-      <fileset file="${basedir}/solutions/mps.masha.summator.build/source_gen/mps/masha/summator/build/summator.bat" />
-      <filterchain>
-        <fixcrlf eol="crlf" />
-      </filterchain>
-    </copy>
-    <zip destfile="${build.layout}/summator-${summator.build.branding.build.number}.win.zip">
-      <fileset dir="${artifacts.summator.build.branding}" />
-      <zipfileset dir="${mps_home}/bin/win" prefix="bin">
-        <exclude name="**/*.exe" />
-        <exclude name="**/*.bat" />
-      </zipfileset>
-      <zipfileset dir="${mps_home}/bin/win" prefix="bin" filemode="755">
-        <include name="**/*.exe" />
-        <include name="**/append.bat" />
-      </zipfileset>
-      <zipfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip_f755" filemode="755" prefix="bin" />
-      <fileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip" />
-    </zip>
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip" />
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app" />
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app/Contents" />
@@ -128,6 +65,9 @@
       <zipfileset dir="${mps_home}/bin/mac" prefix="summator ${version}.app/Contents/bin">
         <include name="**/*.dylib" />
       </zipfileset>
+      <zipfileset file="${mps_home}/lib/jna/amd64/libjnidispatch.jnilib" prefix="summator ${version}.app/Contents/lib/jna" />
+      <zipfileset file="${mps_home}/lib/pty4j/x86-64/libpty.dylib" prefix="summator ${version}.app/Contents/lib/pty4j/darwin" />
+      <zipfileset dir="${mps_home}/plugins/laf-macos" prefix="summator ${version}.app/Contents/plugins/laf-macos" />
       <zipfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f755" filemode="755" prefix="summator ${version}.app/Contents/MacOS" />
       <zipfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f7551" filemode="755" prefix="summator ${version}.app/Contents/bin" />
       <fileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip" />
