@@ -26,6 +26,9 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
+        <property id="1139746504291" name="imageFile" index="1ubRXE" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -54,6 +57,9 @@
       </node>
       <node concept="3F0A7n" id="4VATUGNRUGx" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="1u4HXA" id="YFBEh0_yHP" role="3EZMnx">
+        <property role="1ubRXE" value="${module}/icons/myicon.png" />
       </node>
       <node concept="3F2HdR" id="4VATUGNRUGD" role="3EZMnx">
         <ref role="1NtTu8" to="wno0:4VATUGNRSfi" resolve="list" />

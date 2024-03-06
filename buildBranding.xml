@@ -233,6 +233,7 @@
     </echoxml>
     <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/mps.masha.summator" />
+      <fileset dir="${basedir}/languages/mps.masha.summator" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/languages/mps.masha.summator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/mps.masha.summator.jar" />
     </jar>
