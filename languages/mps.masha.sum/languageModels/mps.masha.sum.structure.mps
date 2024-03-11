@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fd340e5a-b843-447a-9b22-fe9907ead469(mps.masha.summator.structure)">
+<model ref="r:fd340e5a-b843-447a-9b22-fe9907ead469(mps.masha.sum.structure)">
   <persistence version="9" />
   <languages>
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
@@ -90,6 +90,7 @@
     <property role="TrG5h" value="Num" />
     <property role="34LRSv" value="number" />
     <property role="EcuMT" value="5685486302097540045" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4VATUGNRSfg" role="1TKVEl">
       <property role="TrG5h" value="value" />

@@ -148,10 +148,10 @@
     </jar>
     <mkdir dir="${build.layout}/plugins/summator/languages" />
     <mkdir dir="${build.layout}/plugins/summator/languages/SummatorGroup" />
-    <mkdir dir="${build.tmp}/default/mps.masha.summator.jar" />
-    <mkdir dir="${build.tmp}/default/mps.masha.summator.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/mps.masha.summator.jar/META-INF/module.xml">
-      <module namespace="mps.masha.summator" type="language" uuid="4b6e04c7-e3b1-4211-8dbd-011e66ef7df0">
+    <mkdir dir="${build.tmp}/default/mps.masha.sum.jar" />
+    <mkdir dir="${build.tmp}/default/mps.masha.sum.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/mps.masha.sum.jar/META-INF/module.xml">
+      <module namespace="mps.masha.sum" type="language" uuid="4b6e04c7-e3b1-4211-8dbd-011e66ef7df0">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -228,19 +228,19 @@
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="mps.masha.summator-src.jar" descriptor="mps.masha.summator.mpl" />
+        <sources jar="mps.masha.sum-src.jar" descriptor="mps.masha.sum.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/mps.masha.summator" />
+    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.sum.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/mps.masha.sum" />
       <fileset dir="${basedir}/languages/mps.masha.summator" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/languages/mps.masha.summator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/mps.masha.summator.jar" />
+      <fileset dir="${basedir}/languages/mps.masha.sum/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/mps.masha.sum.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/mps.masha.summator-generator.jar" />
-    <mkdir dir="${build.tmp}/default/mps.masha.summator-generator.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/mps.masha.summator-generator.jar/META-INF/module.xml">
-      <module namespace="mps.masha.summator#5685486302097484263" type="generator" uuid="83d4cc5f-b724-449f-8cb6-70c53de46705">
+    <mkdir dir="${build.tmp}/default/mps.masha.sum-generator.jar" />
+    <mkdir dir="${build.tmp}/default/mps.masha.sum-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/mps.masha.sum-generator.jar/META-INF/module.xml">
+      <module namespace="mps.masha.sum#5685486302097484263" type="generator" uuid="83d4cc5f-b724-449f-8cb6-70c53de46705">
         <dependencies>
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
@@ -256,7 +256,7 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
-          <module ref="4b6e04c7-e3b1-4211-8dbd-011e66ef7df0(mps.masha.summator)" kind="cl" />
+          <module ref="4b6e04c7-e3b1-4211-8dbd-011e66ef7df0(mps.masha.sum)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
@@ -271,41 +271,41 @@
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
           <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
-          <language id="l:4b6e04c7-e3b1-4211-8dbd-011e66ef7df0:mps.masha.summator" />
+          <language id="l:4b6e04c7-e3b1-4211-8dbd-011e66ef7df0:mps.masha.sum" />
         </uses>
         <classpath>
           <entry path="." />
         </classpath>
-        <sources jar="mps.masha.summator-src.jar" descriptor="mps.masha.summator.mpl" />
+        <sources jar="mps.masha.sum-src.jar" descriptor="mps.masha.sum.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263" />
-      <fileset dir="${basedir}/languages/mps.masha.summator/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/mps.masha.summator-generator.jar" />
+    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.sum-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/mps.masha.sum#5685486302097484263" />
+      <fileset dir="${basedir}/languages/mps.masha.sum/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/mps.masha.sum-generator.jar" />
     </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.summator-languageModels">
-      <fileset dir="${basedir}/languages/mps.masha.summator/languageModels" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.sum-languageModels">
+      <fileset dir="${basedir}/languages/mps.masha.sum/languageModels" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.summator-generator-template">
-      <fileset dir="${basedir}/languages/mps.masha.summator/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.sum-generator-template">
+      <fileset dir="${basedir}/languages/mps.masha.sum/generator/template" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.summator-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/languages/mps.masha.summator/generator/source_gen">
+    <jar destfile="${build.layout}/plugins/summator/languages/SummatorGroup/mps.masha.sum-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/mps.masha.sum/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <fileset dir="${basedir}/languages/mps.masha.summator/source_gen">
+      <fileset dir="${basedir}/languages/mps.masha.sum/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
         <exclude name="**/checkpoints" />
         <exclude name="**/*.mps" />
       </fileset>
-      <zipfileset file="${basedir}/languages/mps.masha.summator/mps.masha.summator.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.summator-languageModels" prefix="module/languageModels" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.summator-generator-template" prefix="module/generator/template" />
+      <zipfileset file="${basedir}/languages/mps.masha.sum/mps.masha.sum.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.sum-languageModels" prefix="module/languageModels" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-mps.masha.sum-generator-template" prefix="module/generator/template" />
     </jar>
     <echo file="${build.layout}/build.number">build.number=${build.number}${line.separator}date=${date}${line.separator}version=1.0</echo>
     <echo file="${build.layout}/build.properties">summator.build.branding.date=${date}${line.separator}summator.build.branding.build.number=${build.number}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
@@ -322,7 +322,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.mps.masha.summator, java.compile.mps.masha.summator#5685486302097484263" />
+  <target name="compileJava" depends="java.compile.mps.masha.sum, java.compile.mps.masha.sum#5685486302097484263" />
   
   <target name="processResources" />
   
@@ -455,7 +455,7 @@
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.refactoring.jar" />
       <library file="${artifacts.mpsStandalone}/languages/util/jetbrains.mps.runtime.jar" />
       <chunk>
-        <module file="${basedir}/languages/mps.masha.summator/mps.masha.summator.mpl" />
+        <module file="${basedir}/languages/mps.masha.sum/mps.masha.sum.mpl" />
       </chunk>
       <chunk />
       <jvmargs>
@@ -471,13 +471,13 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.mps.masha.summator" depends="fetchDependencies">
-    <mkdir dir="${basedir}/languages/mps.masha.summator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/mps.masha.summator" />
-    <javac destdir="${build.tmp}/java/out/mps.masha.summator" fork="false" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.mps.masha.sum" depends="fetchDependencies">
+    <mkdir dir="${basedir}/languages/mps.masha.sum/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/mps.masha.sum" />
+    <javac destdir="${build.tmp}/java/out/mps.masha.sum" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/mps.masha.summator/source_gen" />
+        <path location="${basedir}/languages/mps.masha.sum/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
@@ -532,20 +532,20 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
-    <copy todir="${build.tmp}/java/out/mps.masha.summator">
-      <fileset dir="${basedir}/languages/mps.masha.summator/source_gen">
+    <copy todir="${build.tmp}/java/out/mps.masha.sum">
+      <fileset dir="${basedir}/languages/mps.masha.sum/source_gen">
         <include name="**/*.png" />
       </fileset>
     </copy>
   </target>
   
-  <target name="java.compile.mps.masha.summator#5685486302097484263" depends="java.compile.mps.masha.summator, fetchDependencies">
-    <mkdir dir="${basedir}/languages/mps.masha.summator/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263" />
-    <javac destdir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263" fork="false" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.mps.masha.sum#5685486302097484263" depends="java.compile.mps.masha.sum, fetchDependencies">
+    <mkdir dir="${basedir}/languages/mps.masha.sum/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/mps.masha.sum#5685486302097484263" />
+    <javac destdir="${build.tmp}/java/out/mps.masha.sum#5685486302097484263" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/languages/mps.masha.summator/generator/source_gen" />
+        <path location="${basedir}/languages/mps.masha.sum/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mpsStandalone}/lib/mps-annotations.jar" />
@@ -571,7 +571,7 @@
         <fileset file="${artifacts.mpsStandalone}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/mps-project-check.jar" />
-        <pathelement path="${build.tmp}/java/out/mps.masha.summator" />
+        <pathelement path="${build.tmp}/java/out/mps.masha.sum" />
         <fileset file="${artifacts.mpsStandalone}/lib/annotations.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app.jar" />
         <fileset file="${artifacts.mpsStandalone}/lib/app-client.jar" />
@@ -595,16 +595,16 @@
         <fileset file="${artifacts.mpsStandalone}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
-    <copy todir="${build.tmp}/java/out/mps.masha.summator#5685486302097484263">
-      <fileset dir="${basedir}/languages/mps.masha.summator/generator/source_gen">
+    <copy todir="${build.tmp}/java/out/mps.masha.sum#5685486302097484263">
+      <fileset dir="${basedir}/languages/mps.masha.sum/generator/source_gen">
         <include name="**/*.png" />
       </fileset>
     </copy>
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/languages/mps.masha.summator/source_gen" />
-    <delete dir="${basedir}/languages/mps.masha.summator/generator/source_gen" />
+    <delete dir="${basedir}/languages/mps.masha.sum/source_gen" />
+    <delete dir="${basedir}/languages/mps.masha.sum/generator/source_gen" />
   </target>
   
   <target name="collect-tips-mps-tips">

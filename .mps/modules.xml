@@ -12,15 +12,15 @@
       <modulePath path="$PROJECT_DIR$/languages/jb.mary.test.shortIfLang/sandbox/jb.mary.test.shortIfLang.sandbox.msd" folder="base language extensions" />
       <modulePath path="$PROJECT_DIR$/languages/mps.masha.lang/mps.masha.lang.mpl" folder="generation plan sample" />
       <modulePath path="$PROJECT_DIR$/languages/mps.masha.lang/sandbox/mps.masha.lang.sandbox.msd" folder="generation plan sample" />
-      <modulePath path="$PROJECT_DIR$/languages/mps.masha.summator/mps.masha.summator.mpl" folder="sum of numbers" />
-      <modulePath path="$PROJECT_DIR$/languages/mps.masha.summator/sandbox/mps.masha.summator.sandbox.msd" folder="sum of numbers" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.masha.sum/mps.masha.sum.mpl" folder="sum of numbers" />
+      <modulePath path="$PROJECT_DIR$/languages/mps.masha.sum/sandbox/mps.masha.sum.sandbox.msd" folder="sum of numbers" />
       <modulePath path="$PROJECT_DIR$/solutions/LanguageTests/LanguageTests.msd" folder="typesystem annotations" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="typesystem annotations" />
       <modulePath path="$PROJECT_DIR$/solutions/TestModes/TestModes.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/TestRunDebug/TestRunDebug.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Tests.build/Tests.build.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/masha.genplan/masha.genplan.msd" folder="generation plan sample" />
-      <modulePath path="$PROJECT_DIR$/solutions/mps.masha.summator.build/mps.masha.summator.build.msd" folder="sum of numbers" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps.masha.sum.build/mps.masha.sum.build.msd" folder="sum of numbers" />
     </projectModules>
   </component>
 </project>

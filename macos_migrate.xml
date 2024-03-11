@@ -14,6 +14,8 @@
   <target name="migrate">
     <migrate project="${basedir}" autoPluginDiscovery="true">
       <macro name="mps_home" path="${mps.home}"/>
+      <plugin path="/Users/Maria.Lebedeva/Library/Application Support/JetBrains/MPS2023.3/plugins/ProjectMigration" id="ProjectMigration"/>
+      <plugin path="mps_home/plugins/mps-build" id="MPS Build Languages"/>
       <jvmargs>
         <arg value="-ea" />
       </jvmargs>

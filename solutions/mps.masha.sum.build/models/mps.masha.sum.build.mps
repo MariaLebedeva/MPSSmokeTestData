@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f7adabce-f245-466b-beae-1f08793dcd8f(mps.masha.summator.build)">
+<model ref="r:f7adabce-f245-466b-beae-1f08793dcd8f(mps.masha.sum.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -593,15 +593,15 @@
       <property role="TrG5h" value="SummatorGroup" />
       <node concept="1E1JtD" id="6UB_WUPRKT3" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="mps.masha.summator" />
+        <property role="TrG5h" value="mps.masha.sum" />
         <property role="3LESm3" value="4b6e04c7-e3b1-4211-8dbd-011e66ef7df0" />
         <node concept="55IIr" id="6UB_WUPRKSY" role="3LF7KH">
           <node concept="2Ry0Ak" id="6UB_WUPRKSZ" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
             <node concept="2Ry0Ak" id="6UB_WUPRKT0" role="2Ry0An">
-              <property role="2Ry0Am" value="mps.masha.summator" />
+              <property role="2Ry0Am" value="mps.masha.sum" />
               <node concept="2Ry0Ak" id="6UB_WUPRKT1" role="2Ry0An">
-                <property role="2Ry0Am" value="mps.masha.summator.mpl" />
+                <property role="2Ry0Am" value="mps.masha.sum.mpl" />
               </node>
             </node>
           </node>
@@ -615,19 +615,19 @@
           <property role="3ZfqAx" value="languageModels" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="6UB_WUPRKUf" role="1HemKq">
-            <node concept="55IIr" id="6UB_WUPRKUa" role="3LXTmr">
-              <node concept="2Ry0Ak" id="6UB_WUPRKUb" role="iGT6I">
+          <node concept="3LXTmp" id="2o1JYQvyXwv" role="1HemKq">
+            <node concept="55IIr" id="2o1JYQvyXwr" role="3LXTmr">
+              <node concept="2Ry0Ak" id="2o1JYQvyXws" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6UB_WUPRKUc" role="2Ry0An">
-                  <property role="2Ry0Am" value="mps.masha.summator" />
-                  <node concept="2Ry0Ak" id="6UB_WUPRKUd" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2o1JYQvyXwt" role="2Ry0An">
+                  <property role="2Ry0Am" value="mps.masha.sum" />
+                  <node concept="2Ry0Ak" id="2o1JYQvyXwu" role="2Ry0An">
                     <property role="2Ry0Am" value="languageModels" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="6UB_WUPRKUg" role="3LXTna">
+            <node concept="3qWCbU" id="2o1JYQvyXww" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
@@ -643,7 +643,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="6UB_WUPRKUl" role="1TViLv">
-          <property role="TrG5h" value="mps.masha.summator#5685486302097484263" />
+          <property role="TrG5h" value="mps.masha.sum#5685486302097484263" />
           <property role="3LESm3" value="83d4cc5f-b724-449f-8cb6-70c53de46705" />
           <node concept="1SiIV0" id="6UB_WUPRKUm" role="3bR37C">
             <node concept="3bR9La" id="6UB_WUPRKUn" role="1SiIV1">
@@ -659,22 +659,22 @@
             <property role="3ZfqAx" value="generator/template" />
             <property role="1Hdu6h" value="true" />
             <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="6UB_WUPRKUw" role="1HemKq">
-              <node concept="55IIr" id="6UB_WUPRKUq" role="3LXTmr">
-                <node concept="2Ry0Ak" id="6UB_WUPRKUr" role="iGT6I">
+            <node concept="3LXTmp" id="2o1JYQvyXwA" role="1HemKq">
+              <node concept="55IIr" id="2o1JYQvyXwx" role="3LXTmr">
+                <node concept="2Ry0Ak" id="2o1JYQvyXwy" role="iGT6I">
                   <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="6UB_WUPRKUs" role="2Ry0An">
-                    <property role="2Ry0Am" value="mps.masha.summator" />
-                    <node concept="2Ry0Ak" id="6UB_WUPRKUt" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="2o1JYQvyXwz" role="2Ry0An">
+                    <property role="2Ry0Am" value="mps.masha.sum" />
+                    <node concept="2Ry0Ak" id="2o1JYQvyXw$" role="2Ry0An">
                       <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="6UB_WUPRKUu" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="2o1JYQvyXw_" role="2Ry0An">
                         <property role="2Ry0Am" value="template" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3qWCbU" id="6UB_WUPRKUx" role="3LXTna">
+              <node concept="3qWCbU" id="2o1JYQvyXwB" role="3LXTna">
                 <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e0e8d749-3374-412a-96db-a8b933ee5c8a(mps.masha.summator.generator.template.main@generator)">
+<model ref="r:e0e8d749-3374-412a-96db-a8b933ee5c8a(mps.masha.sum.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="4b6e04c7-e3b1-4211-8dbd-011e66ef7df0" name="mps.masha.summator" version="0" />
@@ -10,7 +10,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="wno0" ref="r:fd340e5a-b843-447a-9b22-fe9907ead469(mps.masha.summator.structure)" implicit="true" />
+    <import index="wno0" ref="r:fd340e5a-b843-447a-9b22-fe9907ead469(mps.masha.sum.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
