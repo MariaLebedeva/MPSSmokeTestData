@@ -273,8 +273,8 @@
       <node concept="55IIr" id="6UB_WUPRKSz" role="3vi$VU">
         <node concept="2Ry0Ak" id="6UB_WUPRKS$" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6UB_WUPRKS_" role="2Ry0An">
-            <property role="2Ry0Am" value="logo.png" />
+          <node concept="2Ry0Ak" id="6y_O37H_$87" role="2Ry0An">
+            <property role="2Ry0Am" value="MyApp.png" />
           </node>
         </node>
       </node>
@@ -301,8 +301,8 @@
       <node concept="55IIr" id="6UB_WUPRKSI" role="2EqU2t">
         <node concept="2Ry0Ak" id="6UB_WUPRKSJ" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6UB_WUPRKSK" role="2Ry0An">
-            <property role="2Ry0Am" value="splash.png" />
+          <node concept="2Ry0Ak" id="6y_O37H_$89" role="2Ry0An">
+            <property role="2Ry0Am" value="MySplash.png" />
           </node>
         </node>
       </node>
@@ -324,16 +324,16 @@
       <node concept="55IIr" id="6UB_WUPRKSR" role="1hH5nN">
         <node concept="2Ry0Ak" id="6UB_WUPRKSS" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6UB_WUPT2hn" role="2Ry0An">
-            <property role="2Ry0Am" value="summator.svg" />
+          <node concept="2Ry0Ak" id="6y_O37H_slq" role="2Ry0An">
+            <property role="2Ry0Am" value="myapp.svg" />
           </node>
         </node>
       </node>
       <node concept="55IIr" id="6UB_WUPRKSU" role="1hH5mY">
         <node concept="2Ry0Ak" id="6UB_WUPRKSV" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="6UB_WUPT2hp" role="2Ry0An">
-            <property role="2Ry0Am" value="summator_16.svg" />
+          <node concept="2Ry0Ak" id="6y_O37H_sls" role="2Ry0An">
+            <property role="2Ry0Am" value="myapp.svg" />
           </node>
         </node>
       </node>

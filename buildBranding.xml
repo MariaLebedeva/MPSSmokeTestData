@@ -76,12 +76,12 @@
       <component>
         <version major="${mpsBootstrapCore.version.major}" minor="${mpsBootstrapCore.version.minor}" eap="false" />
         <build number="${build.number}" date="${date}" />
-        <logo url="/splash.png" textcolor="FFFFFF" progressColor="FFFFFF" />
-        <icon svg="/summator.svg" svg-small="/summator_16.svg" />
+        <logo url="/MySplash.png" textcolor="FFFFFF" progressColor="FFFFFF" />
+        <icon svg="/myapp.svg" svg-small="/myapp.svg" />
         <package code="code" />
         <names product="summator" fullname="summator" script="summator" />
         
-        <welcome-screen logo-url="/logo.png" />
+        <welcome-screen logo-url="/MyApp.png" />
         
         <plugins url="https://plugins.jetbrains.com/" />
         
@@ -89,10 +89,10 @@
       </component>
     </echoxml>
     <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
-      <fileset file="${basedir}/icons/summator.svg" />
-      <fileset file="${basedir}/icons/summator_16.svg" />
-      <fileset file="${basedir}/icons/logo.png" />
-      <fileset file="${basedir}/icons/splash.png" />
+      <fileset file="${basedir}/icons/myapp.svg" />
+      <fileset file="${basedir}/icons/myapp.svg" />
+      <fileset file="${basedir}/icons/MyApp.png" />
+      <fileset file="${basedir}/icons/MySplash.png" />
       <fileset dir="${build.tmp}/default/branding.jar" />
     </jar>
     <mkdir dir="${build.layout}/plugins" />
