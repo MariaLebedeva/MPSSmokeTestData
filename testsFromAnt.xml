@@ -429,6 +429,7 @@
         <attribute name="Class-Path" value="${manifest.classpath}" />
       </manifest>
     </jar>
+    <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
     <junit showoutput="true" fork="true" haltonfailure="false" dir="${basedir}">
       <jvmarg value="-ea" />
       <jvmarg value="-Xss2048k" />
@@ -436,7 +437,7 @@
       <jvmarg value="-XX:+HeapDumpOnOutOfMemoryError" />
       <jvmarg value="-Didea.config.path=${build.mps.config.path}" />
       <jvmarg value="-Didea.system.path=${build.mps.system.path}" />
-      <jvmarg value="-Djna.boot.library.path=${artifacts.mps}/lib/jna" />
+      <jvmarg value="-Djna.boot.library.path=${build.jna.library.path}" />
       <jvmarg value="--add-opens=java.base/java.io=ALL-UNNAMED" />
       <jvmarg value="--add-opens=java.base/java.lang=ALL-UNNAMED" />
       <jvmarg value="--add-opens=java.base/java.lang.reflect=ALL-UNNAMED" />
