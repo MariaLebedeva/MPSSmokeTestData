@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
   <imports>
@@ -227,19 +227,20 @@
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
           <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="79CuWLw55gF" role="1HemKq">
-            <node concept="55IIr" id="79CuWLw55gA" role="3LXTmr">
-              <node concept="2Ry0Ak" id="79CuWLw55gB" role="iGT6I">
+          <node concept="3LXTmp" id="4yT7lFEFvT4" role="1HemKq">
+            <node concept="398BVA" id="4yT7lFEFvSW" role="3LXTmr">
+              <ref role="398BVh" node="79CuWLw55g8" resolve="mps.macro.project_home" />
+              <node concept="2Ry0Ak" id="4yT7lFEFvSX" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="79CuWLw55gC" role="2Ry0An">
+                <node concept="2Ry0Ak" id="4yT7lFEFvSY" role="2Ry0An">
                   <property role="2Ry0Am" value="TestModes" />
-                  <node concept="2Ry0Ak" id="79CuWLw55gD" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="4yT7lFEFvSZ" role="2Ry0An">
                     <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3qWCbU" id="79CuWLw55gG" role="3LXTna">
+            <node concept="3qWCbU" id="4yT7lFEFvT5" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
