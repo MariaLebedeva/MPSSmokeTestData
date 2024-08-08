@@ -1,7 +1,7 @@
 <project name="projectMigration" default="migrate" basedir=".">
   <property name="env.JAVA_HOME" value="${java.home}/.."/>
   <property name="jdk.home" value="${env.JAVA_HOME}"/>
-  <property name="mps.home" location="/Applications/MPS 2023.3.app/Contents"/>
+  <property name="mps.home" location="/Applications/MPS 2024.1.app/Contents"/>
   <property name="artifacts.mps" location="${mps.home}"/>
   <path id="path.mps.ant.path">
     <pathelement location="${mps.home}/lib/ant/lib/ant-mps.jar"/>
@@ -12,10 +12,8 @@
   </path>
   <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path"/>
   <target name="migrate">
-    <migrate project="${basedir}" autoPluginDiscovery="true">
-      <macro name="mps_home" path="${mps.home}"/>
-      <plugin path="/Users/Maria.Lebedeva/Library/Application Support/JetBrains/MPS2023.3/plugins/ProjectMigration" id="ProjectMigration"/>
-      <plugin path="mps_home/plugins/mps-build" id="MPS Build Languages"/>
+    <migrate project="${basedir}" mpsHome="${mps.home}" autoPluginDiscovery="true">
+      <plugin path="${mps.home}/plugins/mps-build" id="jetbrains.mps.build"/>
       <jvmargs>
         <arg value="-ea" />
       </jvmargs>
