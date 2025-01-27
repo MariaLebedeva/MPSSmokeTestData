@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/summator.build.distribution" />
   <property name="build.layout" location="${build.dir}/artifacts/summator.build.distribution" />
-  <property name="mps_home" location="${basedir}/../../Downloads/MPS 2023.2" />
+  <property name="mps_home" location="${basedir}/../../Downloads/MPS 2024.3 5" />
   <property name="version" value="1.0" />
   <property name="artifacts.summator.build.branding" location="${build.dir}/artifacts/summator.build.branding" />
   <property file="${artifacts.summator.build.branding}/build.properties" prefix="import.summator.build.branding" />
@@ -38,6 +38,22 @@
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
     </copy>
+    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.tar.gz">
+      <fileset file="${basedir}/solutions/mps.masha.sum.build/source_gen/mps/masha/sum/build/product-info-linux-amd64.json" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="\$version\$" replace="${version}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$build\$" replace="${summator.build.branding.build.number}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$path\.selector\$" replace="summator1.0" flags="g" />
+        </tokenfilter>
+        <fixcrlf eol="lf" eof="remove" />
+      </filterchain>
+      <globmapper from="*" to="product-info.json" />
+    </copy>
     <tar destfile="${build.layout}/summator-${summator.build.branding.build.number}.tar.gz" compression="gzip" longfile="gnu">
       <fileset dir="${artifacts.summator.build.branding}" />
       <tarfileset file="${mps_home}/lib/jna/amd64/libjnidispatch.so" prefix="lib/jna" />
@@ -69,6 +85,22 @@
         <fixcrlf eol="crlf" />
       </filterchain>
     </copy>
+    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip">
+      <fileset file="${basedir}/solutions/mps.masha.sum.build/source_gen/mps/masha/sum/build/product-info-windows-amd64.json" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="\$version\$" replace="${version}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$build\$" replace="${summator.build.branding.build.number}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$path\.selector\$" replace="summator1.0" flags="g" />
+        </tokenfilter>
+        <fixcrlf eol="crlf" eof="remove" />
+      </filterchain>
+      <globmapper from="*" to="product-info.json" />
+    </copy>
     <zip destfile="${build.layout}/summator-${summator.build.branding.build.number}.win.zip">
       <fileset dir="${artifacts.summator.build.branding}" />
       <zipfileset file="${mps_home}/lib/jna/amd64/jnidispatch.dll" prefix="lib/jna" />
@@ -91,9 +123,26 @@
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip" />
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app" />
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app/Contents" />
+    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app/Contents/Resources" />
+    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app/Contents/Resources">
+      <fileset file="${basedir}/solutions/mps.masha.sum.build/source_gen/mps/masha/sum/build/product-info-macos-amd64.json" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="\$version\$" replace="${version}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$build\$" replace="${summator.build.branding.build.number}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$path\.selector\$" replace="summator1.0" flags="g" />
+        </tokenfilter>
+        <fixcrlf eol="lf" eof="remove" />
+      </filterchain>
+      <globmapper from="*" to="product-info.json" />
+    </copy>
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f755" />
     <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f755">
-      <fileset file="${mps_home}/bin/mac/Contents/MacOS/mps" />
+      <fileset file="${mps_home}/bin/mac/Contents/MacOS/mps-x64" />
       <globmapper from="*" to="summator" />
     </copy>
     <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app/Contents">
@@ -105,20 +154,14 @@
         <tokenfilter>
           <replaceregex pattern="\$build\$" replace="${summator.build.branding.build.number}" flags="" />
         </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$platform\$" replace="x86_64" flags="" />
+        </tokenfilter>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
       <globmapper from="*" to="Info.plist" />
     </copy>
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app/Contents/bin" />
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f7551" />
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f7551">
-      <fileset dir="${mps_home}/bin/mac">
-        <include name="**/*.py" />
-      </fileset>
-      <filterchain>
-        <fixcrlf eol="lf" eof="remove" />
-      </filterchain>
-    </copy>
     <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip/summator ${version}.app/Contents/bin">
       <fileset file="${basedir}/solutions/mps.masha.sum.build/source_gen/mps/masha/sum/build/summator64.vmoptions" />
       <filterchain>
@@ -129,26 +172,40 @@
     <zip destfile="${build.layout}/summator-${summator.build.branding.build.number}.macos.zip">
       <zipfileset dir="${artifacts.summator.build.branding}" prefix="summator ${version}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="summator ${version}.app/Contents/Resources" />
-      <zipfileset dir="${mps_home}/bin/mac" prefix="summator ${version}.app/Contents/bin" filemode="755">
-        <exclude name="**/*.dylib" />
-        <exclude name="**/*.py" />
-      </zipfileset>
-      <zipfileset dir="${mps_home}/bin/mac" prefix="summator ${version}.app/Contents/bin">
-        <include name="**/*.dylib" />
-      </zipfileset>
+      <zipfileset file="${mps_home}/bin/mac/libnst64.dylib" prefix="summator ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/libmacscreenmenu64.dylib" prefix="summator ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/amd64/restarter" prefix="summator ${version}.app/Contents/bin" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="summator ${version}.app/Contents/bin" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/printenv" prefix="summator ${version}.app/Contents/bin" filemode="755" />
       <zipfileset file="${mps_home}/lib/jna/amd64/libjnidispatch.jnilib" prefix="summator ${version}.app/Contents/lib/jna" />
       <zipfileset file="${mps_home}/lib/pty4j/x86-64/libpty.dylib" prefix="summator ${version}.app/Contents/lib/pty4j/darwin" />
       <zipfileset dir="${mps_home}/plugins/laf-macos" prefix="summator ${version}.app/Contents/plugins/laf-macos" />
       <zipfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f755" filemode="755" prefix="summator ${version}.app/Contents/MacOS" />
-      <zipfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip_f7551" filemode="755" prefix="summator ${version}.app/Contents/bin" />
       <fileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.macos.zip" />
     </zip>
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip" />
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/summator ${version}.app" />
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/summator ${version}.app/Contents" />
+    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/summator ${version}.app/Contents/Resources" />
+    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/summator ${version}.app/Contents/Resources">
+      <fileset file="${basedir}/solutions/mps.masha.sum.build/source_gen/mps/masha/sum/build/product-info-macos-aarch64.json" />
+      <filterchain>
+        <tokenfilter>
+          <replaceregex pattern="\$version\$" replace="${version}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$build\$" replace="${summator.build.branding.build.number}" flags="g" />
+        </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$path\.selector\$" replace="summator1.0" flags="g" />
+        </tokenfilter>
+        <fixcrlf eol="lf" eof="remove" />
+      </filterchain>
+      <globmapper from="*" to="product-info.json" />
+    </copy>
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip_f755" />
     <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip_f755">
-      <fileset file="${mps_home}/bin/mac/Contents/MacOS/mps" />
+      <fileset file="${mps_home}/bin/mac/Contents/MacOS/mps-aarch64" />
       <globmapper from="*" to="summator" />
     </copy>
     <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/summator ${version}.app/Contents">
@@ -160,23 +217,16 @@
         <tokenfilter>
           <replaceregex pattern="\$build\$" replace="${summator.build.branding.build.number}" flags="" />
         </tokenfilter>
+        <tokenfilter>
+          <replaceregex pattern="\$platform\$" replace="arm64" flags="" />
+        </tokenfilter>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
       <globmapper from="*" to="Info.plist" />
     </copy>
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/summator ${version}.app/Contents/bin" />
-    <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip_f7551" />
-    <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip_f7551">
-      <fileset dir="${mps_home}/bin/mac">
-        <exclude name="Contents/**" />
-        <include name="**/*.py" />
-      </fileset>
-      <filterchain>
-        <fixcrlf eol="lf" eof="remove" />
-      </filterchain>
-    </copy>
     <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip/summator ${version}.app/Contents/bin">
-      <fileset file="${basedir}/solutions/mps.masha.sum.build/source_gen/mps/masha/sum/build/summator.vmoptions" />
+      <fileset file="${basedir}/solutions/mps.masha.sum.build/source_gen/mps/masha/sum/build/summator64.vmoptions" />
       <filterchain>
         <fixcrlf eol="lf" eof="remove" />
       </filterchain>
@@ -185,20 +235,15 @@
     <zip destfile="${build.layout}/summator-${summator.build.branding.build.number}-macos-aarch64.zip">
       <zipfileset dir="${artifacts.summator.build.branding}" prefix="summator ${version}.app/Contents" />
       <zipfileset file="${mps_home}/bin/mac/Contents/Resources/mps.icns" prefix="summator ${version}.app/Contents/Resources" />
-      <zipfileset dir="${mps_home}/bin/mac" prefix="summator ${version}.app/Contents/bin" filemode="755">
-        <exclude name="Contents/**" />
-        <exclude name="**/*.dylib" />
-        <exclude name="**/*.py" />
-      </zipfileset>
-      <zipfileset dir="${mps_home}/bin/mac" prefix="summator ${version}.app/Contents/bin">
-        <exclude name="Contents/**" />
-        <include name="**/*.dylib" />
-      </zipfileset>
+      <zipfileset file="${mps_home}/bin/mac/libnst64.dylib" prefix="summator ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/libmacscreenmenu64.dylib" prefix="summator ${version}.app/Contents/bin" />
+      <zipfileset file="${mps_home}/bin/mac/aarch64/restarter" prefix="summator ${version}.app/Contents/bin" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/fsnotifier" prefix="summator ${version}.app/Contents/bin" filemode="755" />
+      <zipfileset file="${mps_home}/bin/mac/printenv" prefix="summator ${version}.app/Contents/bin" filemode="755" />
       <zipfileset file="${mps_home}/lib/jna/aarch64/libjnidispatch.jnilib" prefix="summator ${version}.app/Contents/lib/jna" />
       <zipfileset file="${mps_home}/lib/pty4j/x86-64/libpty.dylib" prefix="summator ${version}.app/Contents/lib/pty4j/darwin" />
       <zipfileset dir="${mps_home}/plugins/laf-macos" prefix="summator ${version}.app/Contents/plugins/laf-macos" />
       <zipfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip_f755" filemode="755" prefix="summator ${version}.app/Contents/MacOS" />
-      <zipfileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip_f7551" filemode="755" prefix="summator ${version}.app/Contents/bin" />
       <fileset dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_-macos-aarch64.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">summator.build.distribution.version=${version}${line.separator}summator.build.branding.date=${summator.build.branding.date}${line.separator}summator.build.branding.build.number=${summator.build.branding.build.number}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
