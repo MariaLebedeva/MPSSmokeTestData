@@ -9,6 +9,7 @@
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="documentation" doc_src="${module}/doc_gen" />
   </facets>
   <accessoryModels />
   <generators>
@@ -78,7 +79,9 @@
     <language slang="l:3ad5badc-1d9c-461c-b7b1-fa2fcd0a0ae7:jetbrains.mps.lang.context" version="0" />
     <language slang="l:ea3159bf-f48e-4720-bde2-86dba75f0d34:jetbrains.mps.lang.context.defs" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:343f8205-dc88-465b-9c5b-ce46b5f1c193:jetbrains.mps.lang.core.doc" version="1" />
     <language slang="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" version="0" />
+    <language slang="l:d304f247-4944-479d-ac8b-972b953bcdfe:jetbrains.mps.lang.doctext" version="0" />
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="14" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" version="2" />
@@ -100,6 +103,7 @@
     <module reference="3baf4e82-c3b1-4b09-98d0-2b6024124914(com.jetbrains.brlang)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
+    <module reference="f0aec392-47e3-40ae-a843-4519e73ec102(jetbrains.mps.lang.documentation.genplan)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>
