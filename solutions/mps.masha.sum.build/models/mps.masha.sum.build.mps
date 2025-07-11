@@ -1103,31 +1103,6 @@
             </node>
           </node>
         </node>
-        <node concept="398223" id="4aCNwdwIH6p" role="39821P">
-          <node concept="3_J27D" id="4aCNwdwIH6q" role="Nbhlr">
-            <node concept="3Mxwew" id="4aCNwdwIH6r" role="3MwsjC">
-              <property role="3MwjfP" value="plugins" />
-            </node>
-          </node>
-          <node concept="398223" id="4aCNwdwIH6s" role="39821P">
-            <node concept="3_J27D" id="4aCNwdwIH6t" role="Nbhlr">
-              <node concept="3Mxwew" id="4aCNwdwIH6u" role="3MwsjC">
-                <property role="3MwjfP" value="laf-win10" />
-              </node>
-            </node>
-            <node concept="2HvfSZ" id="4aCNwdwIH6v" role="39821P">
-              <node concept="398BVA" id="4aCNwdwIH5n" role="2HvfZ0">
-                <ref role="398BVh" node="6UB_WUPRKU_" resolve="mps_home" />
-                <node concept="2Ry0Ak" id="4aCNwdwIH5o" role="iGT6I">
-                  <property role="2Ry0Am" value="plugins" />
-                  <node concept="2Ry0Ak" id="4aCNwdwIH5p" role="2Ry0An">
-                    <property role="2Ry0Am" value="laf-win10" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="398223" id="6UB_WUPRKVX" role="39821P">
           <node concept="28u9K_" id="6UB_WUPRKVY" role="39821P">
             <property role="28hIV_" value="Startup options for 32 and 64 bit systems" />

@@ -52,6 +52,7 @@
         <version>1.0</version>
         <depends>com.intellij.modules.platform</depends>
         <depends>jetbrains.mps.core</depends>
+        <depends>jetbrains.mps.testing</depends>
         <depends>com.intellij.modules.platform</depends>
         
         <extensions defaultExtensionNs="com.intellij">

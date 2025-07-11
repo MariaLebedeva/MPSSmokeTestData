@@ -108,7 +108,6 @@
       <zipfileset file="${mps_home}/lib/pty4j/x86-64/win-helper.dll" prefix="lib/pty4j/win/x86-64" />
       <zipfileset file="${mps_home}/lib/pty4j/x86-64/winpty-agent.exe" prefix="lib/pty4j/win/x86-64" />
       <zipfileset file="${mps_home}/lib/pty4j/x86-64/winpty.dll" prefix="lib/pty4j/win/x86-64" />
-      <zipfileset dir="${mps_home}/plugins/laf-win10" prefix="plugins/laf-win10" />
       <zipfileset dir="${mps_home}/bin/win" prefix="bin">
         <exclude name="**/*.exe" />
         <exclude name="**/*.bat" />

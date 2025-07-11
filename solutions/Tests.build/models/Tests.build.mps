@@ -188,6 +188,9 @@
       <node concept="m$_yC" id="79CuWLw55gn" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="5IFnw2gPWHC" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
+      </node>
       <node concept="3_J27D" id="79CuWLw55go" role="m_cZH">
         <node concept="3Mxwew" id="79CuWLw55gp" role="3MwsjC">
           <property role="3MwjfP" value="ForSmokeTest" />
