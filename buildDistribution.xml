@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/summator.build.distribution" />
   <property name="build.layout" location="${build.dir}/artifacts/summator.build.distribution" />
-  <property name="mps_home" location="${basedir}/../../Downloads/MPS 2024.3 5" />
+  <property name="mps_home" location="${basedir}/../../Downloads/MPS 2025.1" />
   <property name="version" value="1.0" />
   <property name="artifacts.summator.build.branding" location="${build.dir}/artifacts/summator.build.branding" />
   <property file="${artifacts.summator.build.branding}/build.properties" prefix="import.summator.build.branding" />
@@ -76,7 +76,7 @@
       <filterchain>
         <fixcrlf eol="crlf" />
       </filterchain>
-      <globmapper from="*" to="summatort64.exe.vmoptions" />
+      <globmapper from="*" to="summator64.exe.vmoptions" />
     </copy>
     <mkdir dir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip_f755" />
     <copy todir="${build.tmp}/default/summator-_dl__lbrace_build.number_rbrace_.win.zip_f755">

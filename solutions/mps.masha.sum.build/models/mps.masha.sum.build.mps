@@ -2263,8 +2263,8 @@
             <property role="2Ry0Am" value=".." />
             <node concept="2Ry0Ak" id="1qoDzFNv67h" role="2Ry0An">
               <property role="2Ry0Am" value="Downloads" />
-              <node concept="2Ry0Ak" id="1P9bH74VqYm" role="2Ry0An">
-                <property role="2Ry0Am" value="MPS 2025.1 EAP" />
+              <node concept="2Ry0Ak" id="Gu0vfyce6A" role="2Ry0An">
+                <property role="2Ry0Am" value="MPS 2025.1" />
               </node>
             </node>
           </node>
