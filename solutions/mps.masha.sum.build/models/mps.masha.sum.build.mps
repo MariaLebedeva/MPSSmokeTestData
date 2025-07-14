@@ -1156,7 +1156,7 @@
               <property role="2$htvj" value="*" />
               <node concept="NbPM2" id="6UB_WUPRKWf" role="2$htvi">
                 <node concept="3Mxwew" id="6UB_WUPRKWg" role="3MwsjC">
-                  <property role="3MwjfP" value="summatort64.exe.vmoptions" />
+                  <property role="3MwjfP" value="summator64.exe.vmoptions" />
                 </node>
               </node>
             </node>
@@ -2263,8 +2263,8 @@
             <property role="2Ry0Am" value=".." />
             <node concept="2Ry0Ak" id="1qoDzFNv67h" role="2Ry0An">
               <property role="2Ry0Am" value="Downloads" />
-              <node concept="2Ry0Ak" id="2BtenYKaGtY" role="2Ry0An">
-                <property role="2Ry0Am" value="MPS 2024.3 5" />
+              <node concept="2Ry0Ak" id="1P9bH74VqYm" role="2Ry0An">
+                <property role="2Ry0Am" value="MPS 2025.1 EAP" />
               </node>
             </node>
           </node>
