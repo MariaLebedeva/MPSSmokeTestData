@@ -1,7 +1,7 @@
 <project name="projectMigration" default="migrate" basedir=".">
   <property name="env.JAVA_HOME" value="${java.home}/.."/>
   <property name="jdk.home" value="${env.JAVA_HOME}"/>
-  <property name="mps_home" location="/Applications/MPS 2024.3.app/Contents"/>
+  <property name="mps_home" location="/Applications/MPS.app/Contents"/>
   <property name="artifacts.mps" location="${mps_home}"/>
 
   <path id="path.mps.ant.path">
