@@ -5,6 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="ospv" ref="r:54a768d9-9f11-4443-98d8-70ab3a783c52(jetbrains.mps.findUsages)" />
@@ -77,6 +78,9 @@
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
@@ -118,6 +122,14 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
   </registry>
   <node concept="1lH9Xt" id="eLMclRlmKr">
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
@@ -126,7 +138,16 @@
       <property role="TrG5h" value="findUsages" />
       <node concept="3cqZAl" id="eLMclRlmKR" role="3clF45" />
       <node concept="3clFbS" id="eLMclRlmKV" role="3clF47">
-        <node concept="3clFbH" id="34gNrTJ5P6V" role="3cqZAp" />
+        <node concept="3SKdUt" id="2tK7$bThvt0" role="3cqZAp">
+          <node concept="1PaTwC" id="2tK7$bThvt1" role="1aUNEU">
+            <node concept="3oM_SD" id="2tK7$bThvt2" role="1PaTwD">
+              <property role="3oM_SC" value="case" />
+            </node>
+            <node concept="3oM_SD" id="2tK7$bThvH9" role="1PaTwD">
+              <property role="3oM_SC" value="MPS-37926" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="eLMclRl$kG" role="3cqZAp">
           <node concept="3cpWsn" id="eLMclRl$kH" role="3cpWs9">
             <property role="TrG5h" value="instances" />
